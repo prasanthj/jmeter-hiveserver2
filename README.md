@@ -11,7 +11,7 @@ Scripts to make JMeter JDBC sampler work with hiveserver2.
   - cd hive
   - Patch for hive uber JDBC jar. (NOTE: Skip this step if https://issues.apache.org/jira/browse/HIVE-9599 is already resolved). If not download the latest version of patch from HIVE-9599 and apply it
     -  curl https://issues.apache.org/jira/secure/attachment/12702319/HIVE-9599.2.patch | patch -p1
-  - Patch for supporting setQueryTimeout implementation (NOTE: Skip this step if https://issues.apache.org/jira/browse/HIVE-9599 is already resolved). Only timeout = 0 is supported.
+  - Patch for supporting setQueryTimeout implementation (NOTE: Skip this step if https://issues.apache.org/jira/browse/HIVE-10726 is already resolved). Only timeout = 0 is supported.
     - curl https://issues.apache.org/jira/secure/attachment/12733264/HIVE-10726.3.patch | patch -p0
 - Compile hive
   - mvn clean install -DskipTests -Phadoop-2,dist
