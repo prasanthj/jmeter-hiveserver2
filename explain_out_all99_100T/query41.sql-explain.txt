@@ -1,0 +1,75 @@
+Plan optimized by CBO.
+
+Vertex dependency in root stage
+Map 1 <- Reducer 5 (BROADCAST_EDGE), Reducer 6 (BROADCAST_EDGE)
+Reducer 2 <- Map 1 (SIMPLE_EDGE)
+Reducer 3 <- Reducer 2 (SIMPLE_EDGE)
+Reducer 5 <- Map 4 (SIMPLE_EDGE)
+Reducer 6 <- Map 4 (SIMPLE_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:100
+    Stage-1
+      Reducer 3 vectorized, llap
+      File Output Operator [FS_75]
+        Limit [LIM_74] (rows=100 width=107)
+          Number of rows:100
+          Select Operator [SEL_73] (rows=92962 width=107)
+            Output:["_col0"]
+          <-Reducer 2 [SIMPLE_EDGE] vectorized, llap
+            SHUFFLE [RS_72]
+              Group By Operator [GBY_71] (rows=92962 width=107)
+                Output:["_col0"],keys:KEY._col0
+              <-Map 1 [SIMPLE_EDGE] vectorized, llap
+                SHUFFLE [RS_70]
+                  PartitionCols:_col0
+                  Group By Operator [GBY_69] (rows=92962 width=107)
+                    Output:["_col0"],keys:_col2
+                    Select Operator [SEL_68] (rows=185925 width=135)
+                      Output:["_col2"]
+                      Filter Operator [FIL_67] (rows=185925 width=135)
+                        predicate:((_col0 BETWEEN 742 AND 782 and (CASE WHEN (_col4 is null) THEN (0) ELSE (_col3) END > 0)) or (CASE WHEN (_col7 is null) THEN (0) ELSE (_col6) END > 0))
+                        Map Join Operator [MAPJOIN_66] (rows=502000 width=135)
+                          Conds:MAPJOIN_65._col1=RS_63._col2(Left Outer),Output:["_col0","_col2","_col3","_col4","_col6","_col7"]
+                        <-Reducer 6 [BROADCAST_EDGE] vectorized, llap
+                          BROADCAST [RS_63]
+                            PartitionCols:_col2
+                            Select Operator [SEL_62] (rows=37 width=107)
+                              Output:["_col0","_col1","_col2"]
+                              Group By Operator [GBY_61] (rows=37 width=103)
+                                Output:["_col0","_col1"],aggregations:["count(VALUE._col0)"],keys:KEY._col0
+                              <-Map 4 [SIMPLE_EDGE] vectorized, llap
+                                SHUFFLE [RS_57]
+                                  PartitionCols:_col0
+                                  Group By Operator [GBY_56] (rows=37 width=103)
+                                    Output:["_col0","_col1"],aggregations:["count()"],keys:i_manufact
+                                    Select Operator [SEL_55] (rows=14345 width=450)
+                                      Output:["i_manufact"]
+                                      Filter Operator [FIL_54] (rows=14345 width=450)
+                                        predicate:((i_manufact = i_manufact) and (((i_category = 'women') and ((i_color = 'salmon') or (i_color = 'midnight')) and ((i_units = 'oz') or (i_units = 'box')) and ((i_size = 'petite') or (i_size = 'medium'))) or ((i_category = 'women') and ((i_color = 'snow') or (i_color = 'steel')) and ((i_units = 'carton') or (i_units = 'tbl')) and ((i_size = 'n/a') or (i_size = 'extra large'))) or ((i_category = 'men') and ((i_color = 'purple') or (i_color = 'gainsboro')) and ((i_units = 'dram') or (i_units = 'unknown')) and ((i_size = 'small') or (i_size = 'large'))) or ((i_category = 'men') and ((i_color = 'metallic') or (i_color = 'forest')) and ((i_units = 'gram') or (i_units = 'ounce')) and ((i_size = 'petite') or (i_size = 'medium')))))
+                                        TableScan [TS_2] (rows=502000 width=450)
+                                          tpcds_orc@item,item,Tbl:COMPLETE,Col:COMPLETE,Output:["i_category","i_manufact","i_size","i_color","i_units"]
+                        <-Map Join Operator [MAPJOIN_65] (rows=502000 width=218)
+                            Conds:SEL_64._col1=RS_60._col2(Left Outer),Output:["_col0","_col1","_col2","_col3","_col4"]
+                          <-Reducer 5 [BROADCAST_EDGE] vectorized, llap
+                            BROADCAST [RS_60]
+                              PartitionCols:_col2
+                              Select Operator [SEL_59] (rows=37 width=107)
+                                Output:["_col0","_col1","_col2"]
+                                Group By Operator [GBY_58] (rows=37 width=103)
+                                  Output:["_col0","_col1"],aggregations:["count(VALUE._col0)"],keys:KEY._col0
+                                <-Map 4 [SIMPLE_EDGE] vectorized, llap
+                                  SHUFFLE [RS_53]
+                                    PartitionCols:_col0
+                                    Group By Operator [GBY_52] (rows=37 width=103)
+                                      Output:["_col0","_col1"],aggregations:["count()"],keys:i_manufact
+                                      Select Operator [SEL_51] (rows=14345 width=450)
+                                        Output:["i_manufact"]
+                                        Filter Operator [FIL_50] (rows=14345 width=450)
+                                          predicate:((i_manufact = i_manufact) and (((i_category = 'women') and ((i_color = 'orchid') or (i_color = 'papaya')) and ((i_units = 'pound') or (i_units = 'lb')) and ((i_size = 'petite') or (i_size = 'medium'))) or ((i_category = 'women') and ((i_color = 'burlywood') or (i_color = 'navy')) and ((i_units = 'bundle') or (i_units = 'each')) and ((i_size = 'n/a') or (i_size = 'extra large'))) or ((i_category = 'men') and ((i_color = 'bisque') or (i_color = 'azure')) and ((i_units = 'n/a') or (i_units = 'tsp')) and ((i_size = 'small') or (i_size = 'large'))) or ((i_category = 'men') and ((i_color = 'chocolate') or (i_color = 'cornflower')) and ((i_units = 'bunch') or (i_units = 'gross')) and ((i_size = 'petite') or (i_size = 'medium')))))
+                                           Please refer to the previous TableScan [TS_2]
+                          <-Select Operator [SEL_64] (rows=502000 width=205)
+                              Output:["_col0","_col1","_col2"]
+                              TableScan [TS_0] (rows=502000 width=205)
+                                tpcds_orc@item,i1,Tbl:COMPLETE,Col:COMPLETE,Output:["i_manufact_id","i_manufact","i_product_name"]

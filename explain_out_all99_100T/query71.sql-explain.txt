@@ -1,0 +1,175 @@
+Plan optimized by CBO.
+
+Vertex dependency in root stage
+Map 1 <- Map 10 (BROADCAST_EDGE), Map 12 (BROADCAST_EDGE), Map 5 (BROADCAST_EDGE), Reducer 11 (BROADCAST_EDGE), Union 2 (CONTAINS)
+Map 6 <- Map 10 (BROADCAST_EDGE), Map 12 (BROADCAST_EDGE), Map 7 (BROADCAST_EDGE), Reducer 11 (BROADCAST_EDGE), Union 2 (CONTAINS)
+Map 8 <- Map 10 (BROADCAST_EDGE), Map 12 (BROADCAST_EDGE), Map 9 (BROADCAST_EDGE), Reducer 11 (BROADCAST_EDGE), Union 2 (CONTAINS)
+Reducer 11 <- Map 10 (CUSTOM_SIMPLE_EDGE)
+Reducer 3 <- Union 2 (SIMPLE_EDGE)
+Reducer 4 <- Reducer 3 (SIMPLE_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:-1
+    Stage-1
+      Reducer 4 vectorized, llap
+      File Output Operator [FS_165]
+        Select Operator [SEL_164] (rows=6840 width=120)
+          Output:["_col0","_col1","_col2","_col3","_col4"]
+        <-Reducer 3 [SIMPLE_EDGE] vectorized, llap
+          SHUFFLE [RS_163]
+            Group By Operator [GBY_162] (rows=6840 width=120)
+              Output:["_col0","_col1","_col2","_col3","_col4"],aggregations:["sum(VALUE._col0)"],keys:KEY._col0, KEY._col1, KEY._col2, KEY._col3
+            <-Union 2 [SIMPLE_EDGE]
+              <-Map 1 [CONTAINS] vectorized, llap
+                Reduce Output Operator [RS_161]
+                  PartitionCols:_col0, _col1, _col2, _col3
+                  Group By Operator [GBY_160] (rows=16121880 width=120)
+                    Output:["_col0","_col1","_col2","_col3","_col4"],aggregations:["sum(_col0)"],keys:_col4, _col5, _col8, _col9
+                    Select Operator [SEL_159] (rows=1317613802 width=120)
+                      Output:["_col4","_col5","_col8","_col9","_col0"]
+                      Map Join Operator [MAPJOIN_158] (rows=1317613802 width=120)
+                        Conds:MAPJOIN_157._col2=RS_146._col0(Inner),Output:["_col0","_col4","_col5","_col8","_col9"]
+                      <-Map 12 [BROADCAST_EDGE] vectorized, llap
+                        BROADCAST [RS_146]
+                          PartitionCols:_col0
+                          Select Operator [SEL_145] (rows=43200 width=103)
+                            Output:["_col0","_col1","_col2"]
+                            Filter Operator [FIL_144] (rows=43200 width=103)
+                              predicate:(((t_meal_time = 'breakfast') or (t_meal_time = 'dinner')) and t_time_sk is not null)
+                              TableScan [TS_36] (rows=86400 width=103)
+                                tpcds_orc@time_dim,time_dim,Tbl:COMPLETE,Col:COMPLETE,Output:["t_time_sk","t_hour","t_minute","t_meal_time"]
+                      <-Map Join Operator [MAPJOIN_157] (rows=2635227604 width=120)
+                          Conds:SEL_156._col1=RS_138._col0(Inner),Output:["_col0","_col2","_col4","_col5"]
+                        <-Map 10 [BROADCAST_EDGE] vectorized, llap
+                          PARTITION_ONLY_SHUFFLE [RS_138]
+                            PartitionCols:_col0
+                            Select Operator [SEL_137] (rows=7968 width=115)
+                              Output:["_col0","_col1","_col2"]
+                              Filter Operator [FIL_136] (rows=7968 width=115)
+                                predicate:((i_manager_id = 1) and i_item_sk is not null)
+                                TableScan [TS_33] (rows=502000 width=115)
+                                  tpcds_orc@item,item,Tbl:COMPLETE,Col:COMPLETE,Output:["i_item_sk","i_brand_id","i_brand","i_manager_id"]
+                        <-Select Operator [SEL_156] (rows=24588944160 width=24)
+                            Output:["_col0","_col1","_col2"]
+                            Map Join Operator [MAPJOIN_155] (rows=24588944160 width=24)
+                              Conds:SEL_154._col3=RS_132._col0(Inner),Output:["_col0","_col1","_col2"]
+                            <-Map 5 [BROADCAST_EDGE] vectorized, llap
+                              BROADCAST [RS_132]
+                                PartitionCols:_col0
+                                Select Operator [SEL_131] (rows=624 width=16)
+                                  Output:["_col0"]
+                                  Filter Operator [FIL_130] (rows=624 width=16)
+                                    predicate:((d_moy = 12) and (d_year = 2001) and d_date_sk is not null)
+                                    TableScan [TS_3] (rows=73049 width=16)
+                                      tpcds_orc@date_dim,date_dim,Tbl:COMPLETE,Col:COMPLETE,Output:["d_date_sk","d_year","d_moy"]
+                              Dynamic Partitioning Event Operator [EVENT_135] (rows=312 width=16)
+                                Group By Operator [GBY_134] (rows=312 width=16)
+                                  Output:["_col0"],keys:_col0
+                                  Select Operator [SEL_133] (rows=624 width=16)
+                                    Output:["_col0"]
+                                     Please refer to the previous Select Operator [SEL_131]
+                            <-Select Operator [SEL_154] (rows=71955171565 width=31)
+                                Output:["_col0","_col1","_col2","_col3"]
+                                Filter Operator [FIL_153] (rows=71955171565 width=31)
+                                  predicate:(ws_item_sk is not null and ws_sold_time_sk is not null and (ws_item_sk BETWEEN DynamicValue(RS_40_item_i_item_sk_min) AND DynamicValue(RS_40_item_i_item_sk_max) and in_bloom_filter(ws_item_sk, DynamicValue(RS_40_item_i_item_sk_bloom_filter))))
+                                  TableScan [TS_0] (rows=71959659800 width=31)
+                                    Output:["ws_sold_time_sk","ws_item_sk","ws_ext_sales_price"]
+                                  <-Reducer 11 [BROADCAST_EDGE] vectorized, llap
+                                    BROADCAST [RS_150]
+                                      Group By Operator [GBY_149] (rows=1 width=24)
+                                        Output:["_col0","_col1","_col2"],aggregations:["min(VALUE._col0)","max(VALUE._col1)","bloom_filter(VALUE._col2, expectedEntries=1000000)"]
+              <-Map 6 [CONTAINS] vectorized, llap
+                Reduce Output Operator [RS_195]
+                  PartitionCols:_col0, _col1, _col2, _col3
+                  Group By Operator [GBY_194] (rows=16121880 width=120)
+                    Output:["_col0","_col1","_col2","_col3","_col4"],aggregations:["sum(_col0)"],keys:_col4, _col5, _col8, _col9
+                    Select Operator [SEL_193] (rows=1317613802 width=120)
+                      Output:["_col4","_col5","_col8","_col9","_col0"]
+                      Map Join Operator [MAPJOIN_192] (rows=1317613802 width=120)
+                        Conds:MAPJOIN_191._col2=RS_147._col0(Inner),Output:["_col0","_col4","_col5","_col8","_col9"]
+                      <-Map 12 [BROADCAST_EDGE] vectorized, llap
+                        BROADCAST [RS_147]
+                          PartitionCols:_col0
+                           Please refer to the previous Select Operator [SEL_145]
+                      <-Map Join Operator [MAPJOIN_191] (rows=2635227604 width=120)
+                          Conds:SEL_190._col1=RS_142._col0(Inner),Output:["_col0","_col2","_col4","_col5"]
+                        <-Map 10 [BROADCAST_EDGE] vectorized, llap
+                          PARTITION_ONLY_SHUFFLE [RS_142]
+                            PartitionCols:_col0
+                             Please refer to the previous Select Operator [SEL_137]
+                        <-Select Operator [SEL_190] (rows=48579697512 width=24)
+                            Output:["_col0","_col1","_col2"]
+                            Map Join Operator [MAPJOIN_189] (rows=48579697512 width=24)
+                              Conds:SEL_188._col3=RS_183._col0(Inner),Output:["_col0","_col1","_col2"]
+                            <-Map 7 [BROADCAST_EDGE] vectorized, llap
+                              BROADCAST [RS_183]
+                                PartitionCols:_col0
+                                Select Operator [SEL_182] (rows=624 width=16)
+                                  Output:["_col0"]
+                                  Filter Operator [FIL_181] (rows=624 width=16)
+                                    predicate:((d_moy = 12) and (d_year = 2001) and d_date_sk is not null)
+                                    TableScan [TS_13] (rows=73049 width=16)
+                                      tpcds_orc@date_dim,date_dim,Tbl:COMPLETE,Col:COMPLETE,Output:["d_date_sk","d_year","d_moy"]
+                              Dynamic Partitioning Event Operator [EVENT_186] (rows=312 width=16)
+                                Group By Operator [GBY_185] (rows=312 width=16)
+                                  Output:["_col0"],keys:_col0
+                                  Select Operator [SEL_184] (rows=624 width=16)
+                                    Output:["_col0"]
+                                     Please refer to the previous Select Operator [SEL_182]
+                            <-Select Operator [SEL_188] (rows=143171927125 width=31)
+                                Output:["_col0","_col1","_col2","_col3"]
+                                Filter Operator [FIL_187] (rows=143171927125 width=31)
+                                  predicate:(cs_item_sk is not null and cs_sold_time_sk is not null and (cs_item_sk BETWEEN DynamicValue(RS_40_item_i_item_sk_min) AND DynamicValue(RS_40_item_i_item_sk_max) and in_bloom_filter(cs_item_sk, DynamicValue(RS_40_item_i_item_sk_bloom_filter))))
+                                  TableScan [TS_10] (rows=143352541321 width=31)
+                                    Output:["cs_sold_time_sk","cs_item_sk","cs_ext_sales_price"]
+                                  <-Reducer 11 [BROADCAST_EDGE] vectorized, llap
+                                    BROADCAST [RS_151]
+                                       Please refer to the previous Group By Operator [GBY_149]
+              <-Map 8 [CONTAINS] vectorized, llap
+                Reduce Output Operator [RS_180]
+                  PartitionCols:_col0, _col1, _col2, _col3
+                  Group By Operator [GBY_179] (rows=16121880 width=120)
+                    Output:["_col0","_col1","_col2","_col3","_col4"],aggregations:["sum(_col0)"],keys:_col4, _col5, _col8, _col9
+                    Select Operator [SEL_178] (rows=1317613802 width=120)
+                      Output:["_col4","_col5","_col8","_col9","_col0"]
+                      Map Join Operator [MAPJOIN_177] (rows=1317613802 width=120)
+                        Conds:MAPJOIN_176._col2=RS_148._col0(Inner),Output:["_col0","_col4","_col5","_col8","_col9"]
+                      <-Map 12 [BROADCAST_EDGE] vectorized, llap
+                        BROADCAST [RS_148]
+                          PartitionCols:_col0
+                           Please refer to the previous Select Operator [SEL_145]
+                      <-Map Join Operator [MAPJOIN_176] (rows=2635227604 width=120)
+                          Conds:SEL_175._col1=RS_143._col0(Inner),Output:["_col0","_col2","_col4","_col5"]
+                        <-Map 10 [BROADCAST_EDGE] vectorized, llap
+                          PARTITION_ONLY_SHUFFLE [RS_143]
+                            PartitionCols:_col0
+                             Please refer to the previous Select Operator [SEL_137]
+                        <-Select Operator [SEL_175] (rows=92855986961 width=24)
+                            Output:["_col0","_col1","_col2"]
+                            Map Join Operator [MAPJOIN_174] (rows=92855986961 width=24)
+                              Conds:SEL_173._col3=RS_168._col0(Inner),Output:["_col0","_col1","_col2"]
+                            <-Map 9 [BROADCAST_EDGE] vectorized, llap
+                              BROADCAST [RS_168]
+                                PartitionCols:_col0
+                                Select Operator [SEL_167] (rows=624 width=16)
+                                  Output:["_col0"]
+                                  Filter Operator [FIL_166] (rows=624 width=16)
+                                    predicate:((d_moy = 12) and (d_year = 2001) and d_date_sk is not null)
+                                    TableScan [TS_25] (rows=73049 width=16)
+                                      tpcds_orc@date_dim,date_dim,Tbl:COMPLETE,Col:COMPLETE,Output:["d_date_sk","d_year","d_moy"]
+                              Dynamic Partitioning Event Operator [EVENT_171] (rows=312 width=16)
+                                Group By Operator [GBY_170] (rows=312 width=16)
+                                  Output:["_col0"],keys:_col0
+                                  Select Operator [SEL_169] (rows=624 width=16)
+                                    Output:["_col0"]
+                                     Please refer to the previous Select Operator [SEL_167]
+                            <-Select Operator [SEL_173] (rows=271726529985 width=31)
+                                Output:["_col0","_col1","_col2","_col3"]
+                                Filter Operator [FIL_172] (rows=271726529985 width=31)
+                                  predicate:(ss_item_sk is not null and ss_sold_time_sk is not null and (ss_item_sk BETWEEN DynamicValue(RS_40_item_i_item_sk_min) AND DynamicValue(RS_40_item_i_item_sk_max) and in_bloom_filter(ss_item_sk, DynamicValue(RS_40_item_i_item_sk_bloom_filter))))
+                                  TableScan [TS_22] (rows=275035746821 width=31)
+                                    Output:["ss_sold_time_sk","ss_item_sk","ss_ext_sales_price"]
+                                  <-Reducer 11 [BROADCAST_EDGE] vectorized, llap
+                                    BROADCAST [RS_152]
+                                       Please refer to the previous Group By Operator [GBY_149]

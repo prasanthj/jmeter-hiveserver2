@@ -1,0 +1,91 @@
+Plan optimized by CBO.
+
+Vertex dependency in root stage
+Map 1 <- Map 4 (BROADCAST_EDGE), Map 5 (BROADCAST_EDGE), Map 6 (BROADCAST_EDGE), Map 8 (BROADCAST_EDGE), Reducer 7 (BROADCAST_EDGE)
+Reducer 2 <- Map 1 (SIMPLE_EDGE)
+Reducer 3 <- Reducer 2 (SIMPLE_EDGE)
+Reducer 7 <- Map 6 (CUSTOM_SIMPLE_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:100
+    Stage-1
+      Reducer 3 vectorized, llap
+      File Output Operator [FS_124]
+        Limit [LIM_123] (rows=100 width=222)
+          Number of rows:100
+          Select Operator [SEL_122] (rows=7116921 width=222)
+            Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6"]
+          <-Reducer 2 [SIMPLE_EDGE] llap
+            SHUFFLE [RS_33]
+              Select Operator [SEL_32] (rows=7116921 width=222)
+                Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6"]
+                Group By Operator [GBY_31] (rows=7116921 width=222)
+                  Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6"],aggregations:["avg(VALUE._col0)","avg(VALUE._col1)","avg(VALUE._col2)","avg(VALUE._col3)"],keys:KEY._col0, KEY._col1, KEY._col2
+                <-Map 1 [SIMPLE_EDGE] llap
+                  SHUFFLE [RS_30]
+                    PartitionCols:_col0, _col1, _col2
+                    Group By Operator [GBY_29] (rows=522558450 width=506)
+                      Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6"],aggregations:["avg(_col2)","avg(_col3)","avg(_col4)","avg(_col5)"],keys:_col0, _col1, 0
+                      Select Operator [SEL_27] (rows=348372300 width=214)
+                        Output:["_col0","_col1","_col2","_col3","_col4","_col5"]
+                        Map Join Operator [MAPJOIN_97] (rows=348372300 width=214)
+                          Conds:MAPJOIN_96._col0=RS_119._col0(Inner),Output:["_col3","_col4","_col5","_col6","_col15","_col17"]
+                        <-Map 8 [BROADCAST_EDGE] vectorized, llap
+                          BROADCAST [RS_119]
+                            PartitionCols:_col0
+                            Select Operator [SEL_118] (rows=502000 width=108)
+                              Output:["_col0","_col1"]
+                              Filter Operator [FIL_117] (rows=502000 width=108)
+                                predicate:i_item_sk is not null
+                                TableScan [TS_12] (rows=502000 width=108)
+                                  tpcds_orc@item,item,Tbl:COMPLETE,Col:COMPLETE,Output:["i_item_sk","i_item_id"]
+                        <-Map Join Operator [MAPJOIN_96] (rows=348372300 width=122)
+                            Conds:MAPJOIN_95._col2=RS_113._col0(Inner),Output:["_col0","_col3","_col4","_col5","_col6","_col15"]
+                          <-Map 6 [BROADCAST_EDGE] vectorized, llap
+                            PARTITION_ONLY_SHUFFLE [RS_113]
+                              PartitionCols:_col0
+                              Select Operator [SEL_112] (rows=224 width=94)
+                                Output:["_col0","_col1"]
+                                Filter Operator [FIL_111] (rows=224 width=94)
+                                  predicate:((s_state) IN ('sd', 'fl', 'mi', 'la', 'mo', 'sc') and s_store_sk is not null)
+                                  TableScan [TS_9] (rows=1902 width=94)
+                                    tpcds_orc@store,store,Tbl:COMPLETE,Col:COMPLETE,Output:["s_store_sk","s_state"]
+                          <-Map Join Operator [MAPJOIN_95] (rows=2954941865 width=44)
+                              Conds:MAPJOIN_94._col7=RS_107._col0(Inner),Output:["_col0","_col2","_col3","_col4","_col5","_col6"]
+                            <-Map 5 [BROADCAST_EDGE] vectorized, llap
+                              BROADCAST [RS_107]
+                                PartitionCols:_col0
+                                Select Operator [SEL_106] (rows=652 width=12)
+                                  Output:["_col0"]
+                                  Filter Operator [FIL_105] (rows=652 width=12)
+                                    predicate:((d_year = 2001) and d_date_sk is not null)
+                                    TableScan [TS_6] (rows=73049 width=12)
+                                      tpcds_orc@date_dim,date_dim,Tbl:COMPLETE,Col:COMPLETE,Output:["d_date_sk","d_year"]
+                              Dynamic Partitioning Event Operator [EVENT_110] (rows=326 width=12)
+                                Group By Operator [GBY_109] (rows=326 width=12)
+                                  Output:["_col0"],keys:_col0
+                                  Select Operator [SEL_108] (rows=652 width=12)
+                                    Output:["_col0"]
+                                     Please refer to the previous Select Operator [SEL_106]
+                            <-Map Join Operator [MAPJOIN_94] (rows=8275763370 width=52)
+                                Conds:SEL_2._col1=RS_104._col0(Inner),Output:["_col0","_col2","_col3","_col4","_col5","_col6","_col7"]
+                              <-Map 4 [BROADCAST_EDGE] vectorized, llap
+                                BROADCAST [RS_104]
+                                  PartitionCols:_col0
+                                  Select Operator [SEL_103] (rows=55240 width=273)
+                                    Output:["_col0"]
+                                    Filter Operator [FIL_102] (rows=55240 width=272)
+                                      predicate:((cd_gender = 'm') and (cd_marital_status = 'u') and (cd_education_status = '2 yr degree') and cd_demo_sk is not null)
+                                      TableScan [TS_3] (rows=883835 width=272)
+                                        tpcds_orc@customer_demographics,customer_demographics,Tbl:COMPLETE,Col:COMPLETE,Output:["cd_demo_sk","cd_gender","cd_marital_status","cd_education_status"]
+                              <-Select Operator [SEL_2] (rows=268454587567 width=59)
+                                  Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6","_col7"]
+                                  Filter Operator [FIL_51] (rows=268454587567 width=59)
+                                    predicate:(ss_cdemo_sk is not null and ss_store_sk is not null and ss_item_sk is not null and (ss_store_sk BETWEEN DynamicValue(RS_22_store_s_store_sk_min) AND DynamicValue(RS_22_store_s_store_sk_max) and in_bloom_filter(ss_store_sk, DynamicValue(RS_22_store_s_store_sk_bloom_filter))))
+                                    TableScan [TS_0] (rows=275035746821 width=59)
+                                      tpcds_orc@store_sales,store_sales,Tbl:COMPLETE,Col:COMPLETE,Output:["ss_item_sk","ss_cdemo_sk","ss_store_sk","ss_quantity","ss_list_price","ss_sales_price","ss_coupon_amt"]
+                                    <-Reducer 7 [BROADCAST_EDGE] vectorized, llap
+                                      BROADCAST [RS_121]
+                                        Group By Operator [GBY_120] (rows=1 width=24)
+                                          Output:["_col0","_col1","_col2"],aggregations:["min(VALUE._col0)","max(VALUE._col1)","bloom_filter(VALUE._col2, expectedEntries=1000000)"]
