@@ -1,0 +1,183 @@
+Plan optimized by CBO.
+
+Vertex dependency in root stage
+Map 1 <- Map 10 (BROADCAST_EDGE), Map 2 (BROADCAST_EDGE), Map 4 (BROADCAST_EDGE), Map 5 (BROADCAST_EDGE), Map 8 (BROADCAST_EDGE), Map 9 (BROADCAST_EDGE)
+Map 11 <- Map 1 (BROADCAST_EDGE)
+Map 4 <- Map 3 (BROADCAST_EDGE)
+Map 6 <- Map 1 (BROADCAST_EDGE)
+Map 8 <- Map 3 (BROADCAST_EDGE)
+Reducer 12 <- Map 11 (SIMPLE_EDGE)
+Reducer 13 <- Reducer 12 (SIMPLE_EDGE)
+Reducer 7 <- Map 6 (SIMPLE_EDGE), Reducer 13 (BROADCAST_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:-1
+    Stage-1
+      Reducer 7 vectorized, llap
+      File Output Operator [FS_358]
+        Select Operator [SEL_357] (rows=1 width=276)
+          Output:["_col0","_col1","_col2","_col3"]
+          Filter Operator [FIL_356] (rows=1 width=284)
+            predicate:(_col3 > _col4)
+            Map Join Operator [MAPJOIN_355] (rows=3 width=284)
+              Conds:(Left Outer),Output:["_col0","_col1","_col2","_col3","_col4"]
+            <-Reducer 13 [BROADCAST_EDGE] llap
+              BROADCAST [RS_88]
+                Select Operator [SEL_86] (rows=1 width=8)
+                  Output:["_col0"]
+                  Group By Operator [GBY_85] (rows=1 width=8)
+                    Output:["_col0"],aggregations:["avg(VALUE._col0)"]
+                  <-Reducer 12 [SIMPLE_EDGE] vectorized, llap
+                    SHUFFLE [RS_84]
+                      Group By Operator [GBY_350] (rows=1 width=80)
+                        Output:["_col0"],aggregations:["avg(_col10)"]
+                        Select Operator [SEL_349] (rows=36 width=725)
+                          Output:["_col10"]
+                          Group By Operator [GBY_348] (rows=36 width=725)
+                            Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6","_col7","_col8","_col9","_col10"],aggregations:["sum(VALUE._col0)"],keys:KEY._col0, KEY._col1, KEY._col2, KEY._col3, KEY._col4, KEY._col5, KEY._col6, KEY._col7, KEY._col8, KEY._col9
+                          <-Map 11 [SIMPLE_EDGE] vectorized, llap
+                            SHUFFLE [RS_347]
+                              PartitionCols:_col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9
+                              Group By Operator [GBY_346] (rows=36 width=725)
+                                Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6","_col7","_col8","_col9","_col10"],aggregations:["sum(_col12)"],keys:_col0, _col4, _col6, _col14, _col15, _col18, _col19, _col20, _col21, _col22
+                                Select Operator [SEL_345] (rows=687 width=725)
+                                  Output:["_col0","_col4","_col6","_col14","_col15","_col18","_col19","_col20","_col21","_col22","_col12"]
+                                  Map Join Operator [MAPJOIN_344] (rows=687 width=725)
+                                    Conds:RS_335._col8, _col11=SEL_343._col0, _col1(Inner),Output:["_col0","_col4","_col6","_col12","_col14","_col15","_col18","_col19","_col20","_col21","_col22"]
+                                  <-Map 1 [BROADCAST_EDGE] vectorized, llap
+                                    BROADCAST [RS_335]
+                                      PartitionCols:_col8, _col11
+                                      Map Join Operator [MAPJOIN_334] (rows=366556 width=741)
+                                        Conds:MAPJOIN_333._col8=RS_323._col0(Inner),Output:["_col0","_col4","_col6","_col8","_col11","_col12","_col14","_col15","_col18","_col19","_col20","_col21","_col22"]
+                                      <-Map 10 [BROADCAST_EDGE] vectorized, llap
+                                        BROADCAST [RS_323]
+                                          PartitionCols:_col0
+                                          Select Operator [SEL_322] (rows=502000 width=284)
+                                            Output:["_col0","_col1","_col2","_col3","_col4","_col5"]
+                                            Filter Operator [FIL_321] (rows=502000 width=284)
+                                              predicate:i_item_sk is not null
+                                              TableScan [TS_56] (rows=502000 width=284)
+                                                tpcds_orc@item,item,Tbl:COMPLETE,Col:COMPLETE,Output:["i_item_sk","i_current_price","i_size","i_color","i_units","i_manager_id"]
+                                      <-Map Join Operator [MAPJOIN_333] (rows=366556 width=464)
+                                          Conds:MAPJOIN_332._col9, upper(_col2)=RS_320._col0, _col3(Inner),Output:["_col0","_col4","_col6","_col8","_col11","_col12","_col14","_col15"]
+                                        <-Map 9 [BROADCAST_EDGE] vectorized, llap
+                                          BROADCAST [RS_320]
+                                            PartitionCols:_col0, _col3
+                                            Select Operator [SEL_319] (rows=1000 width=280)
+                                              Output:["_col0","_col1","_col2","_col3"]
+                                              Filter Operator [FIL_318] (rows=1000 width=280)
+                                                predicate:(c_customer_sk is not null and c_birth_country is not null)
+                                                TableScan [TS_53] (rows=1000 width=280)
+                                                  tpcds_orc@customer,customer,Tbl:COMPLETE,Col:COMPLETE,Output:["c_customer_sk","c_first_name","c_last_name","c_birth_country"]
+                                        <-Map Join Operator [MAPJOIN_332] (rows=25625741186 width=389)
+                                            Conds:RS_317._col3=SEL_331._col2(Inner),Output:["_col0","_col2","_col4","_col6","_col8","_col9","_col11","_col12"]
+                                          <-Map 8 [BROADCAST_EDGE] vectorized, llap
+                                            BROADCAST [RS_317]
+                                              PartitionCols:_col3
+                                              Map Join Operator [MAPJOIN_316] (rows=210 width=365)
+                                                Conds:RS_306._col1=SEL_315._col4(Inner),Output:["_col0","_col2","_col3","_col4","_col6"]
+                                              <-Map 3 [BROADCAST_EDGE] vectorized, llap
+                                                BROADCAST [RS_306]
+                                                  PartitionCols:_col1
+                                                  Select Operator [SEL_305] (rows=500 width=272)
+                                                    Output:["_col0","_col1","_col2"]
+                                                    Filter Operator [FIL_304] (rows=500 width=272)
+                                                      predicate:(ca_zip is not null and ca_country is not null)
+                                                      TableScan [TS_6] (rows=500 width=272)
+                                                        tpcds_orc@customer_address,customer_address,Tbl:COMPLETE,Col:COMPLETE,Output:["ca_state","ca_zip","ca_country"]
+                                              <-Select Operator [SEL_315] (rows=173 width=275)
+                                                  Output:["_col0","_col1","_col3","_col4"]
+                                                  Filter Operator [FIL_314] (rows=173 width=275)
+                                                    predicate:((s_market_id = 7) and s_store_sk is not null and s_zip is not null)
+                                                    TableScan [TS_47] (rows=1902 width=274)
+                                                      tpcds_orc@store,store,Tbl:COMPLETE,Col:COMPLETE,Output:["s_store_sk","s_store_name","s_market_id","s_state","s_zip"]
+                                          <-Select Operator [SEL_331] (rows=281438607293 width=39)
+                                              Output:["_col0","_col1","_col2","_col3","_col4"]
+                                              Filter Operator [FIL_330] (rows=281438607293 width=39)
+                                                predicate:(ss_item_sk is not null and ss_ticket_number is not null and ss_store_sk is not null and ss_customer_sk is not null)
+                                                TableScan [TS_0] (rows=288018711538 width=39)
+                                                  tpcds_orc@store_sales,store_sales,Tbl:COMPLETE,Col:PARTIAL,Output:["ss_item_sk","ss_customer_sk","ss_store_sk","ss_ticket_number","ss_sales_price"]
+                                                <-Map 2 [BROADCAST_EDGE] vectorized, llap
+                                                  BROADCAST [RS_300]
+                                                    PartitionCols:_col0
+                                                    Select Operator [SEL_299] (rows=7606 width=286)
+                                                      Output:["_col0","_col1","_col2","_col4","_col5"]
+                                                      Filter Operator [FIL_298] (rows=7606 width=284)
+                                                        predicate:((i_color = 'chiffon') and i_item_sk is not null)
+                                                        TableScan [TS_3] (rows=502000 width=284)
+                                                          tpcds_orc@item,item,Tbl:COMPLETE,Col:COMPLETE,Output:["i_item_sk","i_current_price","i_size","i_color","i_units","i_manager_id"]
+                                                <-Map 4 [BROADCAST_EDGE] vectorized, llap
+                                                  BROADCAST [RS_310]
+                                                    PartitionCols:_col3
+                                                    Map Join Operator [MAPJOIN_309] (rows=210 width=365)
+                                                      Conds:RS_303._col1=SEL_308._col4(Inner),Output:["_col0","_col2","_col3","_col4","_col6"]
+                                                    <-Map 3 [BROADCAST_EDGE] vectorized, llap
+                                                      BROADCAST [RS_303]
+                                                        PartitionCols:_col1
+                                                        Select Operator [SEL_302] (rows=500 width=272)
+                                                          Output:["_col0","_col1","_col2"]
+                                                          Filter Operator [FIL_301] (rows=500 width=272)
+                                                            predicate:(ca_zip is not null and ca_country is not null)
+                                                             Please refer to the previous TableScan [TS_6]
+                                                    <-Select Operator [SEL_308] (rows=173 width=275)
+                                                        Output:["_col0","_col1","_col3","_col4"]
+                                                        Filter Operator [FIL_307] (rows=173 width=275)
+                                                          predicate:((s_market_id = 7) and s_store_sk is not null and s_zip is not null)
+                                                          TableScan [TS_9] (rows=1902 width=274)
+                                                            tpcds_orc@store,store,Tbl:COMPLETE,Col:COMPLETE,Output:["s_store_sk","s_store_name","s_market_id","s_state","s_zip"]
+                                                <-Map 5 [BROADCAST_EDGE] vectorized, llap
+                                                  BROADCAST [RS_313]
+                                                    PartitionCols:_col0, _col3
+                                                    Select Operator [SEL_312] (rows=1000 width=280)
+                                                      Output:["_col0","_col1","_col2","_col3"]
+                                                      Filter Operator [FIL_311] (rows=1000 width=280)
+                                                        predicate:(c_customer_sk is not null and c_birth_country is not null)
+                                                        TableScan [TS_16] (rows=1000 width=280)
+                                                          tpcds_orc@customer,customer,Tbl:COMPLETE,Col:COMPLETE,Output:["c_customer_sk","c_first_name","c_last_name","c_birth_country"]
+                                  <-Select Operator [SEL_343] (rows=28777641316 width=16)
+                                      Output:["_col0","_col1"]
+                                      Filter Operator [FIL_342] (rows=28777641316 width=16)
+                                        predicate:(sr_item_sk is not null and sr_ticket_number is not null)
+                                        TableScan [TS_59] (rows=28777641316 width=16)
+                                          tpcds_orc@store_returns,store_returns,Tbl:COMPLETE,Col:COMPLETE,Output:["sr_item_sk","sr_ticket_number"]
+            <-Select Operator [SEL_354] (rows=3 width=276)
+                Output:["_col0","_col1","_col2","_col3"]
+                Group By Operator [GBY_353] (rows=3 width=276)
+                  Output:["_col0","_col1","_col2","_col3"],aggregations:["sum(_col9)"],keys:_col5, _col7, _col8
+                  Select Operator [SEL_352] (rows=3 width=636)
+                    Output:["_col5","_col7","_col8","_col9"]
+                    Group By Operator [GBY_351] (rows=3 width=636)
+                      Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6","_col7","_col8","_col9"],aggregations:["sum(VALUE._col0)"],keys:KEY._col0, KEY._col1, KEY._col2, KEY._col3, KEY._col4, KEY._col5, KEY._col6, KEY._col7, KEY._col8
+                    <-Map 6 [SIMPLE_EDGE] vectorized, llap
+                      SHUFFLE [RS_341]
+                        PartitionCols:_col0, _col1, _col2
+                        Group By Operator [GBY_340] (rows=3 width=636)
+                          Output:["_col0","_col1","_col2","_col3","_col4","_col5","_col6","_col7","_col8","_col9"],aggregations:["sum(_col4)"],keys:_col15, _col20, _col21, _col6, _col7, _col9, _col10, _col11, _col17
+                          Select Operator [SEL_339] (rows=687 width=636)
+                            Output:["_col15","_col20","_col21","_col6","_col7","_col9","_col10","_col11","_col17","_col4"]
+                            Map Join Operator [MAPJOIN_338] (rows=687 width=636)
+                              Conds:RS_329._col0, _col3=SEL_337._col0, _col1(Inner),Output:["_col4","_col6","_col7","_col9","_col10","_col11","_col15","_col17","_col20","_col21"]
+                            <-Map 1 [BROADCAST_EDGE] vectorized, llap
+                              BROADCAST [RS_329]
+                                PartitionCols:_col0, _col3
+                                Map Join Operator [MAPJOIN_328] (rows=366530 width=652)
+                                  Conds:MAPJOIN_327._col1, upper(_col13)=RS_313._col0, _col3(Inner),Output:["_col0","_col3","_col4","_col6","_col7","_col9","_col10","_col11","_col15","_col17","_col20","_col21"]
+                                <- Please refer to the previous Map 5 [BROADCAST_EDGE]
+                                <-Map Join Operator [MAPJOIN_327] (rows=388265715 width=577)
+                                    Conds:MAPJOIN_326._col2=RS_310._col3(Inner),Output:["_col0","_col1","_col3","_col4","_col6","_col7","_col9","_col10","_col11","_col13","_col15","_col17"]
+                                  <- Please refer to the previous Map 4 [BROADCAST_EDGE]
+                                  <-Map Join Operator [MAPJOIN_326] (rows=4264187376 width=228)
+                                      Conds:SEL_325._col0=RS_300._col0(Inner),Output:["_col0","_col1","_col2","_col3","_col4","_col6","_col7","_col9","_col10"]
+                                    <- Please refer to the previous Map 2 [BROADCAST_EDGE]
+                                    <-Select Operator [SEL_325] (rows=281438607293 width=39)
+                                        Output:["_col0","_col1","_col2","_col3","_col4"]
+                                        Filter Operator [FIL_324] (rows=281438607293 width=39)
+                                          predicate:(ss_item_sk is not null and ss_ticket_number is not null and ss_store_sk is not null and ss_customer_sk is not null)
+                                           Please refer to the previous TableScan [TS_0]
+                            <-Select Operator [SEL_337] (rows=28777641316 width=16)
+                                Output:["_col0","_col1"]
+                                Filter Operator [FIL_336] (rows=28777641316 width=16)
+                                  predicate:(sr_item_sk is not null and sr_ticket_number is not null)
+                                  TableScan [TS_19] (rows=28777641316 width=16)
+                                    tpcds_orc@store_returns,store_returns,Tbl:COMPLETE,Col:COMPLETE,Output:["sr_item_sk","sr_ticket_number"]
