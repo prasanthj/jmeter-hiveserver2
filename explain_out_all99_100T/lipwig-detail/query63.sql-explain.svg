@@ -9,6 +9,16 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 7705)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-7705 1364,-7705 1364,4 -4,4"/>
+<g id="clust5" class="cluster">
+<title>cluster_Reducer_3</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="667,-8 667,-732 1029,-732 1029,-8 667,-8"/>
+<text text-anchor="middle" x="848" y="-716.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 3 (vectorized=true)</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_Reducer_2</title>
+<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="630,-764 630,-2732 1066,-2732 1066,-764 630,-764"/>
+<text text-anchor="middle" x="848" y="-2716.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=false)</text>
+</g>
 <g id="clust1" class="cluster">
 <title>cluster_Map_6</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-5221 8,-6900 352,-6900 352,-5221 8,-5221"/>
@@ -28,16 +38,6 @@
 <title>cluster_Map_1</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="650,-2764 650,-5178 1046,-5178 1046,-2764 650,-2764"/>
 <text text-anchor="middle" x="848" y="-5162.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 1 (vectorized=true)</text>
-</g>
-<g id="clust5" class="cluster">
-<title>cluster_Reducer_3</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="667,-8 667,-732 1029,-732 1029,-8 667,-8"/>
-<text text-anchor="middle" x="848" y="-716.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 3 (vectorized=true)</text>
-</g>
-<g id="clust6" class="cluster">
-<title>cluster_Reducer_2</title>
-<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="630,-764 630,-2732 1066,-2732 1066,-764 630,-764"/>
-<text text-anchor="middle" x="848" y="-2716.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=false)</text>
 </g>
 <!-- Map_6_0 -->
 <g id="Map_6_0" class="node">

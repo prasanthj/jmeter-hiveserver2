@@ -9,11 +9,6 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4190)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-4190 726,-4190 726,4 -4,4"/>
-<g id="clust1" class="cluster">
-<title>cluster_Map_6</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="15,-2925 15,-4178 344,-4178 344,-2925 15,-2925"/>
-<text text-anchor="middle" x="179.5" y="-4162.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 6 (vectorized=true)</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_Map_5</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="392,-2611 392,-3868 714,-3868 714,-2611 392,-2611"/>
@@ -43,6 +38,11 @@
 <title>cluster_Reducer_2</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="162,-916 162,-1338 348,-1338 348,-916 162,-916"/>
 <text text-anchor="middle" x="255" y="-1322.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=true)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_Map_6</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="15,-2925 15,-4178 344,-4178 344,-2925 15,-2925"/>
+<text text-anchor="middle" x="179.5" y="-4162.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 6 (vectorized=true)</text>
 </g>
 <!-- Map_6_0 -->
 <g id="Map_6_0" class="node">

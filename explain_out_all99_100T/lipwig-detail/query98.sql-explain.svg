@@ -9,11 +9,6 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 8502)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-8502 1416,-8502 1416,4 -4,4"/>
-<g id="clust7" class="cluster">
-<title>cluster_Reducer_2</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="434,-2112 434,-3046 820,-3046 820,-2112 434,-2112"/>
-<text text-anchor="middle" x="627" y="-3030.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=true)</text>
-</g>
 <g id="clust1" class="cluster">
 <title>cluster_Map_6</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-6095 8,-8490 690,-8490 690,-6095 8,-6095"/>
@@ -43,6 +38,11 @@
 <title>cluster_Reducer_3</title>
 <polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="409,-679 409,-2080 845,-2080 845,-679 409,-679"/>
 <text text-anchor="middle" x="627" y="-2064.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 3 (vectorized=false)</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_Reducer_2</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="434,-2112 434,-3046 820,-3046 820,-2112 434,-2112"/>
+<text text-anchor="middle" x="627" y="-3030.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=true)</text>
 </g>
 <!-- Map_6_0 -->
 <g id="Map_6_0" class="node">
@@ -570,39 +570,39 @@
 <!-- Map_5_5 -->
 <g id="Map_5_5" class="node">
 <title>Map_5_5</title>
-<polygon fill="none" stroke="#000000" points="1043,-5985 1043,-6005 1299,-6005 1299,-5985 1043,-5985"/>
-<text text-anchor="start" x="1116.5688" y="-5991.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="1043,-5963 1043,-5983 1172,-5983 1172,-5963 1043,-5963"/>
-<text text-anchor="start" x="1093.5034" y="-5968.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5963 1174,-5983 1299,-5983 1299,-5963 1174,-5963"/>
-<text text-anchor="start" x="1212" y="-5968.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 827832 </text>
-<polygon fill="none" stroke="#000000" points="1043,-5941 1043,-5961 1172,-5961 1172,-5941 1043,-5941"/>
-<text text-anchor="start" x="1089.6069" y="-5946.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5941 1174,-5961 1299,-5961 1299,-5941 1174,-5941"/>
-<text text-anchor="start" x="1219.2563" y="-5946.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 8116 </text>
-<polygon fill="none" stroke="#000000" points="1043,-5919 1043,-5939 1172,-5939 1172,-5919 1043,-5919"/>
-<text text-anchor="start" x="1045.6689" y="-5924.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5919 1174,-5939 1299,-5939 1299,-5919 1174,-5919"/>
-<text text-anchor="start" x="1210.5713" y="-5924.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;]</text>
-<polygon fill="none" stroke="#000000" points="1043,-5897 1043,-5917 1172,-5917 1172,-5897 1043,-5897"/>
-<text text-anchor="start" x="1090.0034" y="-5902.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5897 1174,-5917 1299,-5917 1299,-5897 1174,-5897"/>
-<text text-anchor="start" x="1217.9541" y="-5902.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
-<polygon fill="none" stroke="#000000" points="1043,-5875 1043,-5895 1172,-5895 1172,-5875 1043,-5875"/>
-<text text-anchor="start" x="1092.7241" y="-5880.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5875 1174,-5895 1299,-5895 1299,-5875 1174,-5875"/>
-<text text-anchor="start" x="1176.7402" y="-5880.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;_col0 (type: bigint)&quot;</text>
-<polygon fill="none" stroke="#000000" points="1043,-5853 1043,-5873 1172,-5873 1172,-5853 1043,-5853"/>
-<text text-anchor="start" x="1074.8481" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="1174,-5853 1174,-5873 1299,-5873 1299,-5853 1174,-5853"/>
-<text text-anchor="start" x="1205.5059" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_57&quot;</text>
-<polygon fill="none" stroke="#000000" points="1040,-5850 1040,-6008 1302,-6008 1302,-5850 1040,-5850"/>
+<polygon fill="none" stroke="#000000" points="1001,-5985 1001,-6005 1257,-6005 1257,-5985 1001,-5985"/>
+<text text-anchor="start" x="1074.5688" y="-5991.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="1001,-5963 1001,-5983 1130,-5983 1130,-5963 1001,-5963"/>
+<text text-anchor="start" x="1051.5034" y="-5968.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5963 1132,-5983 1257,-5983 1257,-5963 1132,-5963"/>
+<text text-anchor="start" x="1170" y="-5968.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 827832 </text>
+<polygon fill="none" stroke="#000000" points="1001,-5941 1001,-5961 1130,-5961 1130,-5941 1001,-5941"/>
+<text text-anchor="start" x="1047.6069" y="-5946.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5941 1132,-5961 1257,-5961 1257,-5941 1132,-5941"/>
+<text text-anchor="start" x="1177.2563" y="-5946.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 8116 </text>
+<polygon fill="none" stroke="#000000" points="1001,-5919 1001,-5939 1130,-5939 1130,-5919 1001,-5919"/>
+<text text-anchor="start" x="1003.6689" y="-5924.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5919 1132,-5939 1257,-5939 1257,-5919 1132,-5919"/>
+<text text-anchor="start" x="1168.5713" y="-5924.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;]</text>
+<polygon fill="none" stroke="#000000" points="1001,-5897 1001,-5917 1130,-5917 1130,-5897 1001,-5897"/>
+<text text-anchor="start" x="1048.0034" y="-5902.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5897 1132,-5917 1257,-5917 1257,-5897 1132,-5897"/>
+<text text-anchor="start" x="1175.9541" y="-5902.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
+<polygon fill="none" stroke="#000000" points="1001,-5875 1001,-5895 1130,-5895 1130,-5875 1001,-5875"/>
+<text text-anchor="start" x="1050.7241" y="-5880.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5875 1132,-5895 1257,-5895 1257,-5875 1132,-5875"/>
+<text text-anchor="start" x="1134.7402" y="-5880.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;_col0 (type: bigint)&quot;</text>
+<polygon fill="none" stroke="#000000" points="1001,-5853 1001,-5873 1130,-5873 1130,-5853 1001,-5853"/>
+<text text-anchor="start" x="1032.8481" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="1132,-5853 1132,-5873 1257,-5873 1257,-5853 1132,-5853"/>
+<text text-anchor="start" x="1163.5059" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_57&quot;</text>
+<polygon fill="none" stroke="#000000" points="998,-5850 998,-6008 1260,-6008 1260,-5850 998,-5850"/>
 </g>
 <!-- Map_5_4&#45;&gt;Map_5_5 -->
 <g id="edge11" class="edge">
 <title>Map_5_4&#45;&gt;Map_5_5</title>
-<path fill="none" stroke="#000000" d="M1245.3569,-6388.9755C1229.9984,-6293.9667 1202.944,-6126.607 1186.0487,-6022.092"/>
-<polygon fill="#000000" stroke="#000000" points="1189.4972,-6021.4917 1184.4461,-6012.1784 1182.5869,-6022.6088 1189.4972,-6021.4917"/>
+<path fill="none" stroke="#000000" d="M1239.6708,-6388.9755C1216.8115,-6293.9667 1176.5445,-6126.607 1151.3981,-6022.092"/>
+<polygon fill="#000000" stroke="#000000" points="1154.7551,-6021.0822 1149.0128,-6012.1784 1147.9493,-6022.7197 1154.7551,-6021.0822"/>
 </g>
 <!-- Map_5_6 -->
 <g id="Map_5_6" class="node">
@@ -642,8 +642,8 @@
 <!-- Map_5_5&#45;&gt;Map_5_6 -->
 <g id="edge12" class="edge">
 <title>Map_5_5&#45;&gt;Map_5_6</title>
-<path fill="none" stroke="#000000" d="M1100.3069,-5845.8317C1070.1023,-5810.2968 1034.5512,-5768.472 1002.772,-5731.0847"/>
-<polygon fill="#000000" stroke="#000000" points="1005.1945,-5728.5305 996.0512,-5723.1779 999.8609,-5733.0641 1005.1945,-5728.5305"/>
+<path fill="none" stroke="#000000" d="M1069.9505,-5845.8317C1044.8263,-5810.4455 1015.2735,-5768.8219 988.8135,-5731.5542"/>
+<polygon fill="#000000" stroke="#000000" points="991.5094,-5729.3055 982.8663,-5723.1779 985.8017,-5733.358 991.5094,-5729.3055"/>
 </g>
 <!-- Map_5_6&#45;&gt;Map_1_0 -->
 <g id="edge27" class="edge">

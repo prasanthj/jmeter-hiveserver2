@@ -9,6 +9,16 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 5842)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-5842 5361,-5842 5361,4 -4,4"/>
+<g id="clust11" class="cluster">
+<title>cluster_Map_11</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="4957,-1368 4957,-4696 5349,-4696 5349,-1368 4957,-1368"/>
+<text text-anchor="middle" x="5153" y="-4680.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 11 (vectorized=true)</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_Map_1</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="4157,-1368 4157,-4696 4549,-4696 4549,-1368 4157,-1368"/>
+<text text-anchor="middle" x="4353" y="-4680.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 1 (vectorized=true)</text>
+</g>
 <g id="clust7" class="cluster">
 <title>cluster_Reducer_10</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="456,-3395 456,-4767 848,-4767 848,-3395 456,-3395"/>
@@ -43,16 +53,6 @@
 <title>cluster_Map_5</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="3757,-1368 3757,-4696 4149,-4696 4149,-1368 3757,-1368"/>
 <text text-anchor="middle" x="3953" y="-4680.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 5 (vectorized=true)</text>
-</g>
-<g id="clust5" class="cluster">
-<title>cluster_Map_1</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="4157,-1368 4157,-4696 4549,-4696 4549,-1368 4157,-1368"/>
-<text text-anchor="middle" x="4353" y="-4680.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 1 (vectorized=true)</text>
-</g>
-<g id="clust11" class="cluster">
-<title>cluster_Map_11</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="4957,-1368 4957,-4696 5349,-4696 5349,-1368 4957,-1368"/>
-<text text-anchor="middle" x="5153" y="-4680.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 11 (vectorized=true)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">

@@ -9,11 +9,6 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 12506)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-12506 2753,-12506 2753,4 -4,4"/>
-<g id="clust4" class="cluster">
-<title>cluster_Map_4</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="706,-10967 706,-12494 1988,-12494 1988,-10967 706,-10967"/>
-<text text-anchor="middle" x="1347" y="-12478.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 4 (vectorized=true)</text>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_Map_1</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="1390,-2801 1390,-5760 1796,-5760 1796,-2801 1390,-2801"/>
@@ -58,6 +53,11 @@
 <title>cluster_Map_5</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-10956 8,-11974 698,-11974 698,-10956 8,-10956"/>
 <text text-anchor="middle" x="353" y="-11958.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 5 (vectorized=true)</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_Map_4</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="706,-10967 706,-12494 1988,-12494 1988,-10967 706,-10967"/>
+<text text-anchor="middle" x="1347" y="-12478.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 4 (vectorized=true)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">
@@ -2635,41 +2635,41 @@
 <!-- Reducer_8_6 -->
 <g id="Reducer_8_6" class="node">
 <title>Reducer_8_6</title>
-<polygon fill="none" stroke="#000000" points="1085,-6827 1085,-6847 1386,-6847 1386,-6827 1085,-6827"/>
-<text text-anchor="start" x="1181.0688" y="-6833.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="1085,-6805 1085,-6825 1214,-6825 1214,-6805 1085,-6805"/>
-<text text-anchor="start" x="1135.5034" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6805 1216,-6825 1386,-6825 1386,-6805 1216,-6805"/>
-<text text-anchor="start" x="1290.5" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 24 </text>
-<polygon fill="none" stroke="#000000" points="1085,-6783 1085,-6803 1214,-6803 1214,-6783 1085,-6783"/>
-<text text-anchor="start" x="1131.6069" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6783 1216,-6803 1386,-6803 1386,-6783 1216,-6783"/>
-<text text-anchor="start" x="1294" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1 </text>
-<polygon fill="none" stroke="#000000" points="1085,-6761 1085,-6781 1214,-6781 1214,-6761 1085,-6761"/>
-<text text-anchor="start" x="1087.6689" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6761 1216,-6781 1386,-6781 1386,-6761 1216,-6761"/>
-<text text-anchor="start" x="1225.5381" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;, &quot;_col2&quot;]</text>
-<polygon fill="none" stroke="#000000" points="1085,-6739 1085,-6759 1214,-6759 1214,-6739 1085,-6739"/>
-<text text-anchor="start" x="1132.0034" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6739 1216,-6759 1386,-6759 1386,-6739 1216,-6739"/>
-<text text-anchor="start" x="1282.4541" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
-<polygon fill="none" stroke="#000000" points="1085,-6689 1085,-6737 1214,-6737 1214,-6689 1085,-6689"/>
-<text text-anchor="start" x="1111.7896" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6689 1216,-6737 1386,-6737 1386,-6689 1216,-6689"/>
-<text text-anchor="start" x="1218.6201" y="-6722.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;min(_col0)&quot;, &quot;max(_col0)&quot;,</text>
-<text text-anchor="start" x="1243.8994" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;bloom_filter(_col0,</text>
-<text text-anchor="start" x="1220.3325" y="-6694.8" font-family="Times,serif" font-size="14.00" fill="#000000">expectedEntries=1000000)&quot;]</text>
-<polygon fill="none" stroke="#000000" points="1085,-6667 1085,-6687 1214,-6687 1214,-6667 1085,-6667"/>
-<text text-anchor="start" x="1116.8481" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="1216,-6667 1216,-6687 1386,-6687 1386,-6667 1216,-6667"/>
-<text text-anchor="start" x="1266.5059" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_106&quot;</text>
-<polygon fill="none" stroke="#000000" points="1081.5,-6664 1081.5,-6850 1388.5,-6850 1388.5,-6664 1081.5,-6664"/>
+<polygon fill="none" stroke="#000000" points="1008,-6827 1008,-6847 1309,-6847 1309,-6827 1008,-6827"/>
+<text text-anchor="start" x="1104.0688" y="-6833.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="1008,-6805 1008,-6825 1137,-6825 1137,-6805 1008,-6805"/>
+<text text-anchor="start" x="1058.5034" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6805 1139,-6825 1309,-6825 1309,-6805 1139,-6805"/>
+<text text-anchor="start" x="1213.5" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 24 </text>
+<polygon fill="none" stroke="#000000" points="1008,-6783 1008,-6803 1137,-6803 1137,-6783 1008,-6783"/>
+<text text-anchor="start" x="1054.6069" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6783 1139,-6803 1309,-6803 1309,-6783 1139,-6783"/>
+<text text-anchor="start" x="1217" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1 </text>
+<polygon fill="none" stroke="#000000" points="1008,-6761 1008,-6781 1137,-6781 1137,-6761 1008,-6761"/>
+<text text-anchor="start" x="1010.6689" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6761 1139,-6781 1309,-6781 1309,-6761 1139,-6761"/>
+<text text-anchor="start" x="1148.5381" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;, &quot;_col2&quot;]</text>
+<polygon fill="none" stroke="#000000" points="1008,-6739 1008,-6759 1137,-6759 1137,-6739 1008,-6739"/>
+<text text-anchor="start" x="1055.0034" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6739 1139,-6759 1309,-6759 1309,-6739 1139,-6739"/>
+<text text-anchor="start" x="1205.4541" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
+<polygon fill="none" stroke="#000000" points="1008,-6689 1008,-6737 1137,-6737 1137,-6689 1008,-6689"/>
+<text text-anchor="start" x="1034.7896" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6689 1139,-6737 1309,-6737 1309,-6689 1139,-6689"/>
+<text text-anchor="start" x="1141.6201" y="-6722.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;min(_col0)&quot;, &quot;max(_col0)&quot;,</text>
+<text text-anchor="start" x="1166.8994" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;bloom_filter(_col0,</text>
+<text text-anchor="start" x="1143.3325" y="-6694.8" font-family="Times,serif" font-size="14.00" fill="#000000">expectedEntries=1000000)&quot;]</text>
+<polygon fill="none" stroke="#000000" points="1008,-6667 1008,-6687 1137,-6687 1137,-6667 1008,-6667"/>
+<text text-anchor="start" x="1039.8481" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="1139,-6667 1139,-6687 1309,-6687 1309,-6667 1139,-6667"/>
+<text text-anchor="start" x="1189.5059" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_106&quot;</text>
+<polygon fill="none" stroke="#000000" points="1004.5,-6664 1004.5,-6850 1311.5,-6850 1311.5,-6664 1004.5,-6664"/>
 </g>
 <!-- Reducer_8_5&#45;&gt;Reducer_8_6 -->
 <g id="edge55" class="edge">
 <title>Reducer_8_5&#45;&gt;Reducer_8_6</title>
-<path fill="none" stroke="#000000" d="M1367.6575,-6993.9432C1345.8466,-6954.9861 1318.4985,-6906.1389 1294.3087,-6862.9329"/>
-<polygon fill="#000000" stroke="#000000" points="1297.2961,-6861.1041 1289.3569,-6854.0884 1291.1882,-6864.5238 1297.2961,-6861.1041"/>
+<path fill="none" stroke="#000000" d="M1349.7016,-6993.9432C1317.9855,-6954.7421 1278.1672,-6905.5267 1243.0499,-6862.1217"/>
+<polygon fill="#000000" stroke="#000000" points="1245.5613,-6859.6612 1236.5505,-6854.0884 1240.1194,-6864.0641 1245.5613,-6859.6612"/>
 </g>
 <!-- Reducer_8_7 -->
 <g id="Reducer_8_7" class="node">
@@ -2711,47 +2711,47 @@
 <!-- Reducer_8_6&#45;&gt;Reducer_8_7 -->
 <g id="edge56" class="edge">
 <title>Reducer_8_6&#45;&gt;Reducer_8_7</title>
-<path fill="none" stroke="#000000" d="M1174.2846,-6659.8554C1161.0378,-6638.6604 1146.8845,-6616.0151 1133.2098,-6594.1356"/>
-<polygon fill="#000000" stroke="#000000" points="1136.0606,-6592.0932 1127.7926,-6585.4682 1130.1247,-6595.8032 1136.0606,-6592.0932"/>
+<path fill="none" stroke="#000000" d="M1123.9994,-6659.8554C1116.6796,-6638.9418 1108.8656,-6616.6161 1101.3026,-6595.0073"/>
+<polygon fill="#000000" stroke="#000000" points="1104.5709,-6593.7505 1097.9639,-6585.4682 1097.9639,-6596.063 1104.5709,-6593.7505"/>
 </g>
 <!-- Reducer_8_9 -->
 <g id="Reducer_8_9" class="node">
 <title>Reducer_8_9</title>
-<polygon fill="none" stroke="#000000" points="1496,-6827 1496,-6847 1797,-6847 1797,-6827 1496,-6827"/>
-<text text-anchor="start" x="1592.0688" y="-6833.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="1496,-6805 1496,-6825 1625,-6825 1625,-6805 1496,-6805"/>
-<text text-anchor="start" x="1546.5034" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6805 1627,-6825 1797,-6825 1797,-6805 1627,-6805"/>
-<text text-anchor="start" x="1701.5" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 24 </text>
-<polygon fill="none" stroke="#000000" points="1496,-6783 1496,-6803 1625,-6803 1625,-6783 1496,-6783"/>
-<text text-anchor="start" x="1542.6069" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6783 1627,-6803 1797,-6803 1797,-6783 1627,-6783"/>
-<text text-anchor="start" x="1705" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1 </text>
-<polygon fill="none" stroke="#000000" points="1496,-6761 1496,-6781 1625,-6781 1625,-6761 1496,-6761"/>
-<text text-anchor="start" x="1498.6689" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6761 1627,-6781 1797,-6781 1797,-6761 1627,-6761"/>
-<text text-anchor="start" x="1636.5381" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;, &quot;_col2&quot;]</text>
-<polygon fill="none" stroke="#000000" points="1496,-6739 1496,-6759 1625,-6759 1625,-6739 1496,-6739"/>
-<text text-anchor="start" x="1543.0034" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6739 1627,-6759 1797,-6759 1797,-6739 1627,-6739"/>
-<text text-anchor="start" x="1693.4541" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
-<polygon fill="none" stroke="#000000" points="1496,-6689 1496,-6737 1625,-6737 1625,-6689 1496,-6689"/>
-<text text-anchor="start" x="1522.7896" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6689 1627,-6737 1797,-6737 1797,-6689 1627,-6689"/>
-<text text-anchor="start" x="1629.6201" y="-6722.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;min(_col0)&quot;, &quot;max(_col0)&quot;,</text>
-<text text-anchor="start" x="1654.8994" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;bloom_filter(_col0,</text>
-<text text-anchor="start" x="1631.3325" y="-6694.8" font-family="Times,serif" font-size="14.00" fill="#000000">expectedEntries=1000000)&quot;]</text>
-<polygon fill="none" stroke="#000000" points="1496,-6667 1496,-6687 1625,-6687 1625,-6667 1496,-6667"/>
-<text text-anchor="start" x="1527.8481" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="1627,-6667 1627,-6687 1797,-6687 1797,-6667 1627,-6667"/>
-<text text-anchor="start" x="1677.7622" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_116&quot;</text>
-<polygon fill="none" stroke="#000000" points="1492.5,-6664 1492.5,-6850 1799.5,-6850 1799.5,-6664 1492.5,-6664"/>
+<polygon fill="none" stroke="#000000" points="1356,-6827 1356,-6847 1657,-6847 1657,-6827 1356,-6827"/>
+<text text-anchor="start" x="1452.0688" y="-6833.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="1356,-6805 1356,-6825 1485,-6825 1485,-6805 1356,-6805"/>
+<text text-anchor="start" x="1406.5034" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6805 1487,-6825 1657,-6825 1657,-6805 1487,-6805"/>
+<text text-anchor="start" x="1561.5" y="-6810.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 24 </text>
+<polygon fill="none" stroke="#000000" points="1356,-6783 1356,-6803 1485,-6803 1485,-6783 1356,-6783"/>
+<text text-anchor="start" x="1402.6069" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6783 1487,-6803 1657,-6803 1657,-6783 1487,-6783"/>
+<text text-anchor="start" x="1565" y="-6788.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 1 </text>
+<polygon fill="none" stroke="#000000" points="1356,-6761 1356,-6781 1485,-6781 1485,-6761 1356,-6761"/>
+<text text-anchor="start" x="1358.6689" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6761 1487,-6781 1657,-6781 1657,-6761 1487,-6761"/>
+<text text-anchor="start" x="1496.5381" y="-6766.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;, &quot;_col2&quot;]</text>
+<polygon fill="none" stroke="#000000" points="1356,-6739 1356,-6759 1485,-6759 1485,-6739 1356,-6739"/>
+<text text-anchor="start" x="1403.0034" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6739 1487,-6759 1657,-6759 1657,-6739 1487,-6739"/>
+<text text-anchor="start" x="1553.4541" y="-6744.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
+<polygon fill="none" stroke="#000000" points="1356,-6689 1356,-6737 1485,-6737 1485,-6689 1356,-6689"/>
+<text text-anchor="start" x="1382.7896" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6689 1487,-6737 1657,-6737 1657,-6689 1487,-6689"/>
+<text text-anchor="start" x="1489.6201" y="-6722.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;min(_col0)&quot;, &quot;max(_col0)&quot;,</text>
+<text text-anchor="start" x="1514.8994" y="-6708.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;bloom_filter(_col0,</text>
+<text text-anchor="start" x="1491.3325" y="-6694.8" font-family="Times,serif" font-size="14.00" fill="#000000">expectedEntries=1000000)&quot;]</text>
+<polygon fill="none" stroke="#000000" points="1356,-6667 1356,-6687 1485,-6687 1485,-6667 1356,-6667"/>
+<text text-anchor="start" x="1387.8481" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="1487,-6667 1487,-6687 1657,-6687 1657,-6667 1487,-6667"/>
+<text text-anchor="start" x="1537.7622" y="-6672.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_116&quot;</text>
+<polygon fill="none" stroke="#000000" points="1352.5,-6664 1352.5,-6850 1659.5,-6850 1659.5,-6664 1352.5,-6664"/>
 </g>
 <!-- Reducer_8_8&#45;&gt;Reducer_8_9 -->
 <g id="edge58" class="edge">
 <title>Reducer_8_8&#45;&gt;Reducer_8_9</title>
-<path fill="none" stroke="#000000" d="M1690.4748,-6993.9432C1683.2235,-6955.3114 1674.1467,-6906.9541 1666.0872,-6864.0164"/>
-<polygon fill="#000000" stroke="#000000" points="1669.5085,-6863.2711 1664.2237,-6854.0884 1662.6287,-6864.5625 1669.5085,-6863.2711"/>
+<path fill="none" stroke="#000000" d="M1657.8277,-6993.9432C1632.8128,-6954.9048 1601.434,-6905.935 1573.706,-6862.6623"/>
+<polygon fill="#000000" stroke="#000000" points="1576.5541,-6860.6198 1568.212,-6854.0884 1570.6603,-6864.3965 1576.5541,-6860.6198"/>
 </g>
 <!-- Reducer_8_10 -->
 <g id="Reducer_8_10" class="node">
@@ -2793,8 +2793,8 @@
 <!-- Reducer_8_9&#45;&gt;Reducer_8_10 -->
 <g id="edge59" class="edge">
 <title>Reducer_8_9&#45;&gt;Reducer_8_10</title>
-<path fill="none" stroke="#000000" d="M1549.5493,-6659.8554C1528.0401,-6638.1915 1505.0266,-6615.0124 1482.8583,-6592.6846"/>
-<polygon fill="#000000" stroke="#000000" points="1485.2229,-6590.0986 1475.6934,-6585.4682 1480.2554,-6595.0306 1485.2229,-6590.0986"/>
+<path fill="none" stroke="#000000" d="M1458.1216,-6659.8554C1447.7679,-6638.848 1436.7121,-6616.4158 1426.0175,-6594.7167"/>
+<polygon fill="#000000" stroke="#000000" points="1429.0196,-6592.8906 1421.4593,-6585.4682 1422.7408,-6595.9852 1429.0196,-6592.8906"/>
 </g>
 <!-- Reducer_8_10&#45;&gt;Reducer_10_0 -->
 <g id="edge68" class="edge">

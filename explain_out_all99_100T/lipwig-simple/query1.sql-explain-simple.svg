@@ -9,11 +9,6 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4972)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-4972 1313,-4972 1313,4 -4,4"/>
-<g id="clust1" class="cluster">
-<title>cluster_Map_7</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="335,-3270 335,-4459 654,-4459 654,-3270 335,-3270"/>
-<text text-anchor="middle" x="494.5" y="-4443.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_Map_5</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-3270 8,-4459 327,-4459 327,-3270 8,-3270"/>
@@ -58,6 +53,11 @@
 <title>cluster_Reducer_8</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="466,-2969 466,-3238 650,-3238 650,-2969 466,-2969"/>
 <text text-anchor="middle" x="558" y="-3222.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 8 (vectorized=true)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_Map_7</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="335,-3270 335,-4459 654,-4459 654,-3270 335,-3270"/>
+<text text-anchor="middle" x="494.5" y="-4443.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">
@@ -425,21 +425,21 @@
 <!-- Map_4_0 -->
 <g id="Map_4_0" class="node">
 <title>Map_4_0</title>
-<polygon fill="none" stroke="#000000" points="941,-4903 941,-4923 1053,-4923 1053,-4903 941,-4903"/>
-<text text-anchor="start" x="967.9473" y="-4909.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">TableScan</text>
-<polygon fill="none" stroke="#000000" points="941,-4881 941,-4901 982,-4901 982,-4881 941,-4881"/>
-<text text-anchor="start" x="947.5034" y="-4886.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="984,-4881 984,-4901 1053,-4901 1053,-4881 984,-4881"/>
-<text text-anchor="start" x="994" y="-4886.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 876588 </text>
-<polygon fill="none" stroke="#000000" points="941,-4859 941,-4879 982,-4879 982,-4859 941,-4859"/>
-<text text-anchor="start" x="943.6069" y="-4864.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="984,-4859 984,-4879 1053,-4879 1053,-4859 984,-4859"/>
-<text text-anchor="start" x="997.5" y="-4864.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 73049 </text>
-<polygon fill="none" stroke="#000000" points="941,-4837 941,-4857 982,-4857 982,-4837 941,-4837"/>
-<text text-anchor="start" x="946.7275" y="-4842.8" font-family="Times,serif" font-size="14.00" fill="#000000">alias:</text>
-<polygon fill="none" stroke="#000000" points="984,-4837 984,-4857 1053,-4857 1053,-4837 984,-4837"/>
-<text text-anchor="start" x="986.7368" y="-4842.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;date_dim&quot;</text>
-<polygon fill="none" stroke="#000000" points="938,-4834 938,-4926 1056,-4926 1056,-4834 938,-4834"/>
+<polygon fill="none" stroke="#000000" points="942,-4903 942,-4923 1054,-4923 1054,-4903 942,-4903"/>
+<text text-anchor="start" x="968.9473" y="-4909.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">TableScan</text>
+<polygon fill="none" stroke="#000000" points="942,-4881 942,-4901 983,-4901 983,-4881 942,-4881"/>
+<text text-anchor="start" x="948.5034" y="-4886.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="985,-4881 985,-4901 1054,-4901 1054,-4881 985,-4881"/>
+<text text-anchor="start" x="995" y="-4886.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 876588 </text>
+<polygon fill="none" stroke="#000000" points="942,-4859 942,-4879 983,-4879 983,-4859 942,-4859"/>
+<text text-anchor="start" x="944.6069" y="-4864.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="985,-4859 985,-4879 1054,-4879 1054,-4859 985,-4859"/>
+<text text-anchor="start" x="998.5" y="-4864.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 73049 </text>
+<polygon fill="none" stroke="#000000" points="942,-4837 942,-4857 983,-4857 983,-4837 942,-4837"/>
+<text text-anchor="start" x="947.7275" y="-4842.8" font-family="Times,serif" font-size="14.00" fill="#000000">alias:</text>
+<polygon fill="none" stroke="#000000" points="985,-4837 985,-4857 1054,-4857 1054,-4837 985,-4837"/>
+<text text-anchor="start" x="987.7368" y="-4842.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;date_dim&quot;</text>
+<polygon fill="none" stroke="#000000" points="939,-4834 939,-4926 1057,-4926 1057,-4834 939,-4834"/>
 </g>
 <!-- Map_4_1 -->
 <g id="Map_4_1" class="node">
@@ -459,8 +459,8 @@
 <!-- Map_4_0&#45;&gt;Map_4_1 -->
 <g id="edge13" class="edge">
 <title>Map_4_0&#45;&gt;Map_4_1</title>
-<path fill="none" stroke="#000000" d="M975.0064,-4829.9035C965.8614,-4809.0732 955.2878,-4784.9888 946.2255,-4764.3469"/>
-<polygon fill="#000000" stroke="#000000" points="949.4033,-4762.8785 942.1786,-4755.129 942.9938,-4765.6925 949.4033,-4762.8785"/>
+<path fill="none" stroke="#000000" d="M975.7009,-4829.9035C966.4289,-4809.0732 955.7084,-4784.9888 946.5203,-4764.3469"/>
+<polygon fill="#000000" stroke="#000000" points="949.6813,-4762.8416 942.4172,-4755.129 943.2863,-4765.6882 949.6813,-4762.8416"/>
 </g>
 <!-- Map_4_7 -->
 <g id="Map_4_7" class="node">
@@ -480,8 +480,8 @@
 <!-- Map_4_0&#45;&gt;Map_4_7 -->
 <g id="edge19" class="edge">
 <title>Map_4_0&#45;&gt;Map_4_7</title>
-<path fill="none" stroke="#000000" d="M1019.2991,-4829.9035C1028.5711,-4809.0732 1039.2916,-4784.9888 1048.4797,-4764.3469"/>
-<polygon fill="#000000" stroke="#000000" points="1051.7137,-4765.6882 1052.5828,-4755.129 1045.3187,-4762.8416 1051.7137,-4765.6882"/>
+<path fill="none" stroke="#000000" d="M1019.9936,-4829.9035C1029.1386,-4809.0732 1039.7122,-4784.9888 1048.7745,-4764.3469"/>
+<polygon fill="#000000" stroke="#000000" points="1052.0062,-4765.6925 1052.8214,-4755.129 1045.5967,-4762.8785 1052.0062,-4765.6925"/>
 </g>
 <!-- Map_4_2 -->
 <g id="Map_4_2" class="node">
@@ -549,23 +549,23 @@
 <!-- Map_4_5 -->
 <g id="Map_4_5" class="node">
 <title>Map_4_5</title>
-<polygon fill="none" stroke="#000000" points="819,-4227 819,-4247 935,-4247 935,-4227 819,-4227"/>
-<text text-anchor="start" x="822.5688" y="-4233.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="819,-4205 819,-4225 876,-4225 876,-4205 819,-4205"/>
-<text text-anchor="start" x="833.5034" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="878,-4205 878,-4225 935,-4225 935,-4205 878,-4205"/>
-<text text-anchor="start" x="889" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3912 </text>
-<polygon fill="none" stroke="#000000" points="819,-4183 819,-4203 876,-4203 876,-4183 819,-4183"/>
-<text text-anchor="start" x="829.6069" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="878,-4183 878,-4203 935,-4203 935,-4183 878,-4183"/>
-<text text-anchor="start" x="892.5" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 326 </text>
-<polygon fill="none" stroke="#000000" points="816,-4180 816,-4250 938,-4250 938,-4180 816,-4180"/>
+<polygon fill="none" stroke="#000000" points="828,-4227 828,-4247 944,-4247 944,-4227 828,-4227"/>
+<text text-anchor="start" x="831.5688" y="-4233.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="828,-4205 828,-4225 885,-4225 885,-4205 828,-4205"/>
+<text text-anchor="start" x="842.5034" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="887,-4205 887,-4225 944,-4225 944,-4205 887,-4205"/>
+<text text-anchor="start" x="898" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3912 </text>
+<polygon fill="none" stroke="#000000" points="828,-4183 828,-4203 885,-4203 885,-4183 828,-4183"/>
+<text text-anchor="start" x="838.6069" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="887,-4183 887,-4203 944,-4203 944,-4183 887,-4183"/>
+<text text-anchor="start" x="901.5" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 326 </text>
+<polygon fill="none" stroke="#000000" points="825,-4180 825,-4250 947,-4250 947,-4180 825,-4180"/>
 </g>
 <!-- Map_4_4&#45;&gt;Map_4_5 -->
 <g id="edge17" class="edge">
 <title>Map_4_4&#45;&gt;Map_4_5</title>
-<path fill="none" stroke="#000000" d="M905.1376,-4339.7179C900.0306,-4317.0817 893.5643,-4288.42 888.1186,-4264.2824"/>
-<polygon fill="#000000" stroke="#000000" points="891.4692,-4263.23 885.8542,-4254.2454 884.6408,-4264.7706 891.4692,-4263.23"/>
+<path fill="none" stroke="#000000" d="M907.2933,-4339.7179C903.4286,-4317.0817 898.5351,-4288.42 894.4141,-4264.2824"/>
+<polygon fill="#000000" stroke="#000000" points="897.8336,-4263.5137 892.7004,-4254.2454 890.9334,-4264.6919 897.8336,-4263.5137"/>
 </g>
 <!-- Map_4_6 -->
 <g id="Map_4_6" class="node">
@@ -585,8 +585,8 @@
 <!-- Map_4_5&#45;&gt;Map_4_6 -->
 <g id="edge18" class="edge">
 <title>Map_4_5&#45;&gt;Map_4_6</title>
-<path fill="none" stroke="#000000" d="M854.8211,-4175.9958C843.412,-4155.9314 829.4032,-4131.2953 817.3313,-4110.0654"/>
-<polygon fill="#000000" stroke="#000000" points="820.2751,-4108.1616 812.2895,-4101.1987 814.19,-4111.6217 820.2751,-4108.1616"/>
+<path fill="none" stroke="#000000" d="M861.5268,-4175.9958C848.8812,-4155.8419 833.3413,-4131.0752 819.9804,-4109.7813"/>
+<polygon fill="#000000" stroke="#000000" points="822.875,-4107.8092 814.5953,-4101.1987 816.9455,-4111.5296 822.875,-4107.8092"/>
 </g>
 <!-- Map_4_8 -->
 <g id="Map_4_8" class="node">
@@ -654,23 +654,23 @@
 <!-- Map_4_11 -->
 <g id="Map_4_11" class="node">
 <title>Map_4_11</title>
-<polygon fill="none" stroke="#000000" points="1052,-4227 1052,-4247 1168,-4247 1168,-4227 1052,-4227"/>
-<text text-anchor="start" x="1055.5688" y="-4233.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="1052,-4205 1052,-4225 1109,-4225 1109,-4205 1052,-4205"/>
-<text text-anchor="start" x="1066.5034" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="1111,-4205 1111,-4225 1168,-4225 1168,-4205 1111,-4205"/>
-<text text-anchor="start" x="1122" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3912 </text>
-<polygon fill="none" stroke="#000000" points="1052,-4183 1052,-4203 1109,-4203 1109,-4183 1052,-4183"/>
-<text text-anchor="start" x="1062.6069" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="1111,-4183 1111,-4203 1168,-4203 1168,-4183 1111,-4183"/>
-<text text-anchor="start" x="1125.5" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 326 </text>
-<polygon fill="none" stroke="#000000" points="1049,-4180 1049,-4250 1171,-4250 1171,-4180 1049,-4180"/>
+<polygon fill="none" stroke="#000000" points="1035,-4227 1035,-4247 1151,-4247 1151,-4227 1035,-4227"/>
+<text text-anchor="start" x="1038.5688" y="-4233.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="1035,-4205 1035,-4225 1092,-4225 1092,-4205 1035,-4205"/>
+<text text-anchor="start" x="1049.5034" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="1094,-4205 1094,-4225 1151,-4225 1151,-4205 1094,-4205"/>
+<text text-anchor="start" x="1105" y="-4210.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3912 </text>
+<polygon fill="none" stroke="#000000" points="1035,-4183 1035,-4203 1092,-4203 1092,-4183 1035,-4183"/>
+<text text-anchor="start" x="1045.6069" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="1094,-4183 1094,-4203 1151,-4203 1151,-4183 1094,-4183"/>
+<text text-anchor="start" x="1108.5" y="-4188.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 326 </text>
+<polygon fill="none" stroke="#000000" points="1032,-4180 1032,-4250 1154,-4250 1154,-4180 1032,-4180"/>
 </g>
 <!-- Map_4_10&#45;&gt;Map_4_11 -->
 <g id="edge23" class="edge">
 <title>Map_4_10&#45;&gt;Map_4_11</title>
-<path fill="none" stroke="#000000" d="M1204.2989,-4339.7179C1186.7253,-4316.4754 1164.3484,-4286.8802 1145.8032,-4262.3527"/>
-<polygon fill="#000000" stroke="#000000" points="1148.4963,-4260.1112 1139.6734,-4254.2454 1142.9127,-4264.3329 1148.4963,-4260.1112"/>
+<path fill="none" stroke="#000000" d="M1200.227,-4339.7179C1180.1572,-4316.3744 1154.5781,-4286.6227 1133.437,-4262.033"/>
+<polygon fill="#000000" stroke="#000000" points="1135.9148,-4259.5464 1126.7415,-4254.2454 1130.6069,-4264.11 1135.9148,-4259.5464"/>
 </g>
 <!-- Map_4_12 -->
 <g id="Map_4_12" class="node">
@@ -690,8 +690,8 @@
 <!-- Map_4_11&#45;&gt;Map_4_12 -->
 <g id="edge24" class="edge">
 <title>Map_4_11&#45;&gt;Map_4_12</title>
-<path fill="none" stroke="#000000" d="M1094.1944,-4175.9958C1086.1363,-4156.1106 1076.2586,-4131.7348 1067.7083,-4110.6349"/>
-<polygon fill="#000000" stroke="#000000" points="1070.884,-4109.1522 1063.8845,-4101.1987 1064.3964,-4111.7812 1070.884,-4109.1522"/>
+<path fill="none" stroke="#000000" d="M1081.5282,-4175.9958C1075.7059,-4156.2002 1068.5748,-4131.9543 1062.3883,-4110.9202"/>
+<polygon fill="#000000" stroke="#000000" points="1065.7086,-4109.8048 1059.529,-4101.1987 1058.993,-4111.78 1065.7086,-4109.8048"/>
 </g>
 <!-- Map_1_0 -->
 <g id="Map_1_0" class="node">

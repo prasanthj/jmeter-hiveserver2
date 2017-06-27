@@ -9,16 +9,6 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 6027)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-6027 1716,-6027 1716,4 -4,4"/>
-<g id="clust1" class="cluster">
-<title>cluster_Map_7</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-4480 8,-5530 352,-5530 352,-4480 8,-4480"/>
-<text text-anchor="middle" x="180" y="-5514.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
-</g>
-<g id="clust2" class="cluster">
-<title>cluster_Map_6</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="360,-4491 360,-5544 704,-5544 704,-4491 360,-4491"/>
-<text text-anchor="middle" x="532" y="-5528.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 6 (vectorized=true)</text>
-</g>
 <g id="clust3" class="cluster">
 <title>cluster_Map_5</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="712,-4502 712,-6015 1352,-6015 1352,-4502 712,-4502"/>
@@ -43,6 +33,16 @@
 <title>cluster_Reducer_2</title>
 <polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="508,-806 508,-1423 888,-1423 888,-806 508,-806"/>
 <text text-anchor="middle" x="698" y="-1407.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=false)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_Map_7</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-4480 8,-5530 352,-5530 352,-4480 8,-4480"/>
+<text text-anchor="middle" x="180" y="-5514.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_Map_6</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="360,-4491 360,-5544 704,-5544 704,-4491 360,-4491"/>
+<text text-anchor="middle" x="532" y="-5528.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 6 (vectorized=true)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">

@@ -74,21 +74,6 @@
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="416,-4536 416,-4913 600,-4913 600,-4536 416,-4536"/>
 <text text-anchor="middle" x="508" y="-4897.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 3 (vectorized=true)</text>
 </g>
-<g id="clust14" class="cluster">
-<title>cluster_Map_9</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="774,-3676 774,-4493 958,-4493 958,-3676 774,-3676"/>
-<text text-anchor="middle" x="866" y="-4477.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 9 (vectorized=true)</text>
-</g>
-<g id="clust15" class="cluster">
-<title>cluster_Reducer_12</title>
-<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="1086,-3676 1086,-3945 1271,-3945 1271,-3676 1086,-3676"/>
-<text text-anchor="middle" x="1178.5" y="-3929.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 12 (vectorized=false)</text>
-</g>
-<g id="clust16" class="cluster">
-<title>cluster_Reducer_13</title>
-<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="573,-3043 573,-3644 801,-3644 801,-3043 573,-3043"/>
-<text text-anchor="middle" x="687" y="-3628.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 13 (vectorized=false)</text>
-</g>
 <g id="clust17" class="cluster">
 <title>cluster_Map_20</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="1401,-3977 1401,-4663 1585,-4663 1585,-3977 1401,-3977"/>
@@ -113,6 +98,21 @@
 <title>cluster_Map_10</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="1003,-4366 1003,-5083 1201,-5083 1201,-4366 1003,-4366"/>
 <text text-anchor="middle" x="1102" y="-5067.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 10 (vectorized=true)</text>
+</g>
+<g id="clust14" class="cluster">
+<title>cluster_Map_9</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="774,-3676 774,-4493 958,-4493 958,-3676 774,-3676"/>
+<text text-anchor="middle" x="866" y="-4477.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 9 (vectorized=true)</text>
+</g>
+<g id="clust15" class="cluster">
+<title>cluster_Reducer_12</title>
+<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="1086,-3676 1086,-3945 1271,-3945 1271,-3676 1086,-3676"/>
+<text text-anchor="middle" x="1178.5" y="-3929.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 12 (vectorized=false)</text>
+</g>
+<g id="clust16" class="cluster">
+<title>cluster_Reducer_13</title>
+<polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="573,-3043 573,-3644 801,-3644 801,-3043 573,-3043"/>
+<text text-anchor="middle" x="687" y="-3628.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 13 (vectorized=false)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">

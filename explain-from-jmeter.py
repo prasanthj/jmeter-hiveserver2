@@ -92,7 +92,7 @@ def get_explain_graph(plan):
 	result += "}\n"
 	return result
 
-is_explain_formatted = False
+is_explain_formatted = True
 sysargs = len(sys.argv)
 if sysargs < 3:
 	print "Usage: python explain-from-jmeter.py <location-to-jmeter-summary-xml-file> <output-directory-to-store-explain-files>"

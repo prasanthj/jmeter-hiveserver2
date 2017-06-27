@@ -9,20 +9,10 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 3267)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-3267 967,-3267 967,4 -4,4"/>
-<g id="clust1" class="cluster">
-<title>cluster_Map_7</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-2310 8,-2907 192,-2907 192,-2310 8,-2310"/>
-<text text-anchor="middle" x="100" y="-2891.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_Map_6</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="200,-2310 200,-2907 384,-2907 384,-2310 200,-2310"/>
 <text text-anchor="middle" x="292" y="-2891.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 6 (vectorized=true)</text>
-</g>
-<g id="clust3" class="cluster">
-<title>cluster_Map_5</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="392,-2310 392,-3255 711,-3255 711,-2310 392,-2310"/>
-<text text-anchor="middle" x="551.5" y="-3239.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 5 (vectorized=true)</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_Map_4</title>
@@ -43,6 +33,16 @@
 <title>cluster_Reducer_2</title>
 <polygon fill="none" stroke="#ff0000" stroke-dasharray="5,2" points="314,-462 314,-731 498,-731 498,-462 314,-462"/>
 <text text-anchor="middle" x="406" y="-715.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=false)</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_Map_5</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="392,-2310 392,-3255 711,-3255 711,-2310 392,-2310"/>
+<text text-anchor="middle" x="551.5" y="-3239.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 5 (vectorized=true)</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_Map_7</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-2310 8,-2907 192,-2907 192,-2310 8,-2310"/>
+<text text-anchor="middle" x="100" y="-2891.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 7 (vectorized=true)</text>
 </g>
 <!-- Map_7_0 -->
 <g id="Map_7_0" class="node">

@@ -9,6 +9,11 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 6396)">
 <title>g</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-6396 813,-6396 813,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_Map_4</title>
+<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-4138 8,-6384 698,-6384 698,-4138 8,-4138"/>
+<text text-anchor="middle" x="353" y="-6368.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 4 (vectorized=true)</text>
+</g>
 <g id="clust2" class="cluster">
 <title>cluster_Map_1</title>
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="276,-1257 276,-3280 624,-3280 624,-1257 276,-1257"/>
@@ -34,271 +39,266 @@
 <polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="286,-736 286,-1225 614,-1225 614,-736 286,-736"/>
 <text text-anchor="middle" x="450" y="-1209.8" font-family="Times,serif" font-size="14.00" fill="#000000">Reducer 2 (vectorized=true)</text>
 </g>
-<g id="clust1" class="cluster">
-<title>cluster_Map_4</title>
-<polygon fill="none" stroke="#0000ff" stroke-dasharray="5,2" points="8,-4138 8,-6384 698,-6384 698,-4138 8,-4138"/>
-<text text-anchor="middle" x="353" y="-6368.8" font-family="Times,serif" font-size="14.00" fill="#000000">Map 4 (vectorized=true)</text>
-</g>
 <!-- Map_4_0 -->
 <g id="Map_4_0" class="node">
 <title>Map_4_0</title>
-<polygon fill="none" stroke="#000000" points="225,-6327 225,-6347 492,-6347 492,-6327 225,-6327"/>
-<text text-anchor="start" x="329.4473" y="-6333.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">TableScan</text>
-<polygon fill="none" stroke="#000000" points="225,-6305 225,-6325 296,-6325 296,-6305 225,-6305"/>
-<text text-anchor="start" x="246.5034" y="-6310.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="298,-6305 298,-6325 492,-6325 492,-6305 298,-6305"/>
-<text text-anchor="start" x="360" y="-6310.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 225900000 </text>
-<polygon fill="none" stroke="#000000" points="225,-6283 225,-6303 296,-6303 296,-6283 225,-6283"/>
-<text text-anchor="start" x="242.6069" y="-6288.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="298,-6283 298,-6303 492,-6303 492,-6283 298,-6283"/>
-<text text-anchor="start" x="370.5" y="-6288.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 502000 </text>
-<polygon fill="none" stroke="#000000" points="225,-6261 225,-6281 296,-6281 296,-6261 225,-6261"/>
-<text text-anchor="start" x="245.7275" y="-6266.8" font-family="Times,serif" font-size="14.00" fill="#000000">alias:</text>
-<polygon fill="none" stroke="#000000" points="298,-6261 298,-6281 492,-6281 492,-6261 298,-6261"/>
-<text text-anchor="start" x="376.8438" y="-6266.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;item&quot;</text>
-<polygon fill="none" stroke="#000000" points="225,-6239 225,-6259 296,-6259 296,-6239 225,-6239"/>
-<text text-anchor="start" x="227.8481" y="-6244.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="298,-6239 298,-6259 492,-6259 492,-6239 298,-6239"/>
-<text text-anchor="start" x="374.1162" y="-6244.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;TS_2&quot;</text>
-<polygon fill="none" stroke="#000000" points="225,-5503 225,-6237 296,-6237 296,-5503 225,-5503"/>
-<text text-anchor="start" x="231.7275" y="-5865.8" font-family="Times,serif" font-size="14.00" fill="#000000">filterExpr:</text>
-<polygon fill="none" stroke="#000000" points="298,-5503 298,-6237 492,-6237 492,-5503 298,-5503"/>
-<text text-anchor="start" x="300.541" y="-6222.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;(((i_manufact = i_manufact) and</text>
-<text text-anchor="start" x="313.7002" y="-6208.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
-<text text-anchor="start" x="332.7451" y="-6194.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;orchid&#39;) or</text>
-<text text-anchor="start" x="326.5313" y="-6180.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;papaya&#39;)) and</text>
-<text text-anchor="start" x="310.7573" y="-6166.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;pound&#39;) or (i_units</text>
-<text text-anchor="start" x="336.3784" y="-6152.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;lb&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="340.9106" y="-6138.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="313.3105" y="-6124.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))) or ((i_category =</text>
-<text text-anchor="start" x="325.7451" y="-6110.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
-<text text-anchor="start" x="322.6279" y="-6096.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;burlywood&#39;) or (i_color =</text>
-<text text-anchor="start" x="331.1831" y="-6082.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;navy&#39;)) and ((i_units =</text>
-<text text-anchor="start" x="312.9209" y="-6068.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;bundle&#39;) or (i_units = &#39;each&#39;))</text>
-<text text-anchor="start" x="313.3105" y="-6054.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
-<text text-anchor="start" x="342.5991" y="-6040.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
-<text text-anchor="start" x="324.5864" y="-6026.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="332.3521" y="-6012.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;bisque&#39;) or</text>
-<text text-anchor="start" x="331.2002" y="-5998.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;azure&#39;)) and</text>
-<text text-anchor="start" x="314.0078" y="-5984.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;n/a&#39;) or (i_units =</text>
-<text text-anchor="start" x="317.583" y="-5970.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;tsp&#39;)) and ((i_size = &#39;small&#39;)</text>
-<text text-anchor="start" x="330.3491" y="-5956.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;large&#39;))) or</text>
-<text text-anchor="start" x="324.5864" y="-5942.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="323.8105" y="-5928.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;chocolate&#39;) or</text>
-<text text-anchor="start" x="316.0278" y="-5914.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;cornflower&#39;)) and</text>
-<text text-anchor="start" x="311.1504" y="-5900.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;bunch&#39;) or (i_units</text>
-<text text-anchor="start" x="327.0439" y="-5886.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;gross&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="340.9106" y="-5872.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="306.7036" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) or ((i_manufact =</text>
-<text text-anchor="start" x="305.3433" y="-5844.8" font-family="Times,serif" font-size="14.00" fill="#000000">i_manufact) and (((i_category =</text>
-<text text-anchor="start" x="325.7451" y="-5830.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
-<text text-anchor="start" x="332.7383" y="-5816.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;salmon&#39;) or (i_color =</text>
-<text text-anchor="start" x="319.5107" y="-5802.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;midnight&#39;)) and ((i_units =</text>
-<text text-anchor="start" x="315.8296" y="-5788.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;oz&#39;) or (i_units = &#39;box&#39;)) and</text>
-<text text-anchor="start" x="318.1709" y="-5774.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_size = &#39;petite&#39;) or (i_size</text>
-<text text-anchor="start" x="307.6128" y="-5760.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;medium&#39;))) or ((i_category =</text>
-<text text-anchor="start" x="304.3623" y="-5746.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color = &#39;snow&#39;)</text>
-<text text-anchor="start" x="325.9434" y="-5732.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_color = &#39;steel&#39;)) and</text>
-<text text-anchor="start" x="333.9072" y="-5718.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;carton&#39;) or</text>
-<text text-anchor="start" x="316.9917" y="-5704.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_units = &#39;tbl&#39;)) and ((i_size</text>
-<text text-anchor="start" x="325.2085" y="-5690.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;n/a&#39;) or (i_size = &#39;extra</text>
-<text text-anchor="start" x="323.6465" y="-5676.8" font-family="Times,serif" font-size="14.00" fill="#000000">large&#39;))) or ((i_category =</text>
-<text text-anchor="start" x="309.814" y="-5662.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;men&#39;) and ((i_color = &#39;purple&#39;)</text>
-<text text-anchor="start" x="311.1641" y="-5648.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_color = &#39;gainsboro&#39;)) and</text>
-<text text-anchor="start" x="313.8745" y="-5634.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;dram&#39;) or (i_units</text>
-<text text-anchor="start" x="315.7681" y="-5620.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;unknown&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="316.1611" y="-5606.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;small&#39;) or (i_size = &#39;large&#39;)))</text>
-<text text-anchor="start" x="317.0054" y="-5592.8" font-family="Times,serif" font-size="14.00" fill="#000000">or ((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="328.083" y="-5578.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;metallic&#39;) or</text>
-<text text-anchor="start" x="330.4141" y="-5564.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;forest&#39;)) and</text>
-<text text-anchor="start" x="313.8745" y="-5550.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;gram&#39;) or (i_units</text>
-<text text-anchor="start" x="325.1094" y="-5536.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;ounce&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="340.9106" y="-5522.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="308.375" y="-5508.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;)))))) (type: boolean)&quot;</text>
-<polygon fill="none" stroke="#000000" points="221.5,-5500 221.5,-6350 494.5,-6350 494.5,-5500 221.5,-5500"/>
+<polygon fill="none" stroke="#000000" points="219,-6327 219,-6347 486,-6347 486,-6327 219,-6327"/>
+<text text-anchor="start" x="323.4473" y="-6333.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">TableScan</text>
+<polygon fill="none" stroke="#000000" points="219,-6305 219,-6325 290,-6325 290,-6305 219,-6305"/>
+<text text-anchor="start" x="240.5034" y="-6310.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="292,-6305 292,-6325 486,-6325 486,-6305 292,-6305"/>
+<text text-anchor="start" x="354" y="-6310.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 225900000 </text>
+<polygon fill="none" stroke="#000000" points="219,-6283 219,-6303 290,-6303 290,-6283 219,-6283"/>
+<text text-anchor="start" x="236.6069" y="-6288.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="292,-6283 292,-6303 486,-6303 486,-6283 292,-6283"/>
+<text text-anchor="start" x="364.5" y="-6288.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 502000 </text>
+<polygon fill="none" stroke="#000000" points="219,-6261 219,-6281 290,-6281 290,-6261 219,-6261"/>
+<text text-anchor="start" x="239.7275" y="-6266.8" font-family="Times,serif" font-size="14.00" fill="#000000">alias:</text>
+<polygon fill="none" stroke="#000000" points="292,-6261 292,-6281 486,-6281 486,-6261 292,-6261"/>
+<text text-anchor="start" x="370.8438" y="-6266.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;item&quot;</text>
+<polygon fill="none" stroke="#000000" points="219,-6239 219,-6259 290,-6259 290,-6239 219,-6239"/>
+<text text-anchor="start" x="221.8481" y="-6244.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="292,-6239 292,-6259 486,-6259 486,-6239 292,-6239"/>
+<text text-anchor="start" x="368.1162" y="-6244.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;TS_2&quot;</text>
+<polygon fill="none" stroke="#000000" points="219,-5503 219,-6237 290,-6237 290,-5503 219,-5503"/>
+<text text-anchor="start" x="225.7275" y="-5865.8" font-family="Times,serif" font-size="14.00" fill="#000000">filterExpr:</text>
+<polygon fill="none" stroke="#000000" points="292,-5503 292,-6237 486,-6237 486,-5503 292,-5503"/>
+<text text-anchor="start" x="294.541" y="-6222.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;(((i_manufact = i_manufact) and</text>
+<text text-anchor="start" x="307.7002" y="-6208.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
+<text text-anchor="start" x="326.7451" y="-6194.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;orchid&#39;) or</text>
+<text text-anchor="start" x="320.5313" y="-6180.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;papaya&#39;)) and</text>
+<text text-anchor="start" x="304.7573" y="-6166.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;pound&#39;) or (i_units</text>
+<text text-anchor="start" x="330.3784" y="-6152.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;lb&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="334.9106" y="-6138.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="307.3105" y="-6124.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))) or ((i_category =</text>
+<text text-anchor="start" x="319.7451" y="-6110.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
+<text text-anchor="start" x="316.6279" y="-6096.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;burlywood&#39;) or (i_color =</text>
+<text text-anchor="start" x="325.1831" y="-6082.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;navy&#39;)) and ((i_units =</text>
+<text text-anchor="start" x="306.9209" y="-6068.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;bundle&#39;) or (i_units = &#39;each&#39;))</text>
+<text text-anchor="start" x="307.3105" y="-6054.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
+<text text-anchor="start" x="336.5991" y="-6040.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
+<text text-anchor="start" x="318.5864" y="-6026.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="326.3521" y="-6012.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;bisque&#39;) or</text>
+<text text-anchor="start" x="325.2002" y="-5998.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;azure&#39;)) and</text>
+<text text-anchor="start" x="308.0078" y="-5984.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;n/a&#39;) or (i_units =</text>
+<text text-anchor="start" x="311.583" y="-5970.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;tsp&#39;)) and ((i_size = &#39;small&#39;)</text>
+<text text-anchor="start" x="324.3491" y="-5956.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;large&#39;))) or</text>
+<text text-anchor="start" x="318.5864" y="-5942.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="317.8105" y="-5928.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;chocolate&#39;) or</text>
+<text text-anchor="start" x="310.0278" y="-5914.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;cornflower&#39;)) and</text>
+<text text-anchor="start" x="305.1504" y="-5900.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;bunch&#39;) or (i_units</text>
+<text text-anchor="start" x="321.0439" y="-5886.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;gross&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="334.9106" y="-5872.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="300.7036" y="-5858.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) or ((i_manufact =</text>
+<text text-anchor="start" x="299.3433" y="-5844.8" font-family="Times,serif" font-size="14.00" fill="#000000">i_manufact) and (((i_category =</text>
+<text text-anchor="start" x="319.7451" y="-5830.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
+<text text-anchor="start" x="326.7383" y="-5816.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;salmon&#39;) or (i_color =</text>
+<text text-anchor="start" x="313.5107" y="-5802.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;midnight&#39;)) and ((i_units =</text>
+<text text-anchor="start" x="309.8296" y="-5788.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;oz&#39;) or (i_units = &#39;box&#39;)) and</text>
+<text text-anchor="start" x="312.1709" y="-5774.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_size = &#39;petite&#39;) or (i_size</text>
+<text text-anchor="start" x="301.6128" y="-5760.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;medium&#39;))) or ((i_category =</text>
+<text text-anchor="start" x="298.3623" y="-5746.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color = &#39;snow&#39;)</text>
+<text text-anchor="start" x="319.9434" y="-5732.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_color = &#39;steel&#39;)) and</text>
+<text text-anchor="start" x="327.9072" y="-5718.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;carton&#39;) or</text>
+<text text-anchor="start" x="310.9917" y="-5704.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_units = &#39;tbl&#39;)) and ((i_size</text>
+<text text-anchor="start" x="319.2085" y="-5690.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;n/a&#39;) or (i_size = &#39;extra</text>
+<text text-anchor="start" x="317.6465" y="-5676.8" font-family="Times,serif" font-size="14.00" fill="#000000">large&#39;))) or ((i_category =</text>
+<text text-anchor="start" x="303.814" y="-5662.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;men&#39;) and ((i_color = &#39;purple&#39;)</text>
+<text text-anchor="start" x="305.1641" y="-5648.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_color = &#39;gainsboro&#39;)) and</text>
+<text text-anchor="start" x="307.8745" y="-5634.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;dram&#39;) or (i_units</text>
+<text text-anchor="start" x="309.7681" y="-5620.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;unknown&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="310.1611" y="-5606.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;small&#39;) or (i_size = &#39;large&#39;)))</text>
+<text text-anchor="start" x="311.0054" y="-5592.8" font-family="Times,serif" font-size="14.00" fill="#000000">or ((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="322.083" y="-5578.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;metallic&#39;) or</text>
+<text text-anchor="start" x="324.4141" y="-5564.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;forest&#39;)) and</text>
+<text text-anchor="start" x="307.8745" y="-5550.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;gram&#39;) or (i_units</text>
+<text text-anchor="start" x="319.1094" y="-5536.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;ounce&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="334.9106" y="-5522.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="302.375" y="-5508.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;)))))) (type: boolean)&quot;</text>
+<polygon fill="none" stroke="#000000" points="215.5,-5500 215.5,-6350 488.5,-6350 488.5,-5500 215.5,-5500"/>
 </g>
 <!-- Map_4_1 -->
 <g id="Map_4_1" class="node">
 <title>Map_4_1</title>
-<polygon fill="none" stroke="#000000" points="69,-5394 69,-5414 332,-5414 332,-5394 69,-5394"/>
-<text text-anchor="start" x="158.7085" y="-5400.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Filter Operator</text>
-<polygon fill="none" stroke="#000000" points="69,-5372 69,-5392 140,-5392 140,-5372 69,-5372"/>
-<text text-anchor="start" x="90.5034" y="-5377.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="142,-5372 142,-5392 332,-5392 332,-5372 142,-5372"/>
-<text text-anchor="start" x="209" y="-5377.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
-<polygon fill="none" stroke="#000000" points="69,-5350 69,-5370 140,-5370 140,-5350 69,-5350"/>
-<text text-anchor="start" x="86.6069" y="-5355.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="142,-5350 142,-5370 332,-5370 332,-5350 142,-5350"/>
-<text text-anchor="start" x="216" y="-5355.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
-<polygon fill="none" stroke="#000000" points="69,-4964 69,-5348 140,-5348 140,-4964 69,-4964"/>
-<text text-anchor="start" x="76.9067" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">predicate:</text>
-<polygon fill="none" stroke="#000000" points="142,-4964 142,-5348 332,-5348 332,-4964 142,-4964"/>
-<text text-anchor="start" x="144.8721" y="-5333.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;((i_manufact = i_manufact) and</text>
-<text text-anchor="start" x="155.7002" y="-5319.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
-<text text-anchor="start" x="174.7451" y="-5305.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;orchid&#39;) or</text>
-<text text-anchor="start" x="168.5313" y="-5291.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;papaya&#39;)) and</text>
-<text text-anchor="start" x="152.7573" y="-5277.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;pound&#39;) or (i_units</text>
-<text text-anchor="start" x="178.3784" y="-5263.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;lb&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="182.9106" y="-5249.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="155.3105" y="-5235.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))) or ((i_category =</text>
-<text text-anchor="start" x="167.7451" y="-5221.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
-<text text-anchor="start" x="164.6279" y="-5207.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;burlywood&#39;) or (i_color =</text>
-<text text-anchor="start" x="173.1831" y="-5193.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;navy&#39;)) and ((i_units =</text>
-<text text-anchor="start" x="154.9209" y="-5179.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;bundle&#39;) or (i_units = &#39;each&#39;))</text>
-<text text-anchor="start" x="155.3105" y="-5165.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
-<text text-anchor="start" x="184.5991" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
-<text text-anchor="start" x="166.5864" y="-5137.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="174.3521" y="-5123.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;bisque&#39;) or</text>
-<text text-anchor="start" x="173.2002" y="-5109.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;azure&#39;)) and</text>
-<text text-anchor="start" x="156.0078" y="-5095.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;n/a&#39;) or (i_units =</text>
-<text text-anchor="start" x="159.583" y="-5081.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;tsp&#39;)) and ((i_size = &#39;small&#39;)</text>
-<text text-anchor="start" x="172.3491" y="-5067.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;large&#39;))) or</text>
-<text text-anchor="start" x="166.5864" y="-5053.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="165.8105" y="-5039.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;chocolate&#39;) or</text>
-<text text-anchor="start" x="158.0278" y="-5025.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;cornflower&#39;)) and</text>
-<text text-anchor="start" x="153.1504" y="-5011.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;bunch&#39;) or (i_units</text>
-<text text-anchor="start" x="169.0439" y="-4997.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;gross&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="182.9106" y="-4983.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="152.7061" y="-4969.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) (type: boolean)&quot;</text>
-<polygon fill="none" stroke="#000000" points="69,-4942 69,-4962 140,-4962 140,-4942 69,-4942"/>
-<text text-anchor="start" x="71.8481" y="-4947.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="142,-4942 142,-4962 332,-4962 332,-4942 142,-4942"/>
-<text text-anchor="start" x="210.2852" y="-4947.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;FIL_50&quot;</text>
-<polygon fill="none" stroke="#000000" points="65.5,-4939 65.5,-5417 334.5,-5417 334.5,-4939 65.5,-4939"/>
+<polygon fill="none" stroke="#000000" points="64,-5394 64,-5414 327,-5414 327,-5394 64,-5394"/>
+<text text-anchor="start" x="153.7085" y="-5400.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Filter Operator</text>
+<polygon fill="none" stroke="#000000" points="64,-5372 64,-5392 135,-5392 135,-5372 64,-5372"/>
+<text text-anchor="start" x="85.5034" y="-5377.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="137,-5372 137,-5392 327,-5392 327,-5372 137,-5372"/>
+<text text-anchor="start" x="204" y="-5377.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
+<polygon fill="none" stroke="#000000" points="64,-5350 64,-5370 135,-5370 135,-5350 64,-5350"/>
+<text text-anchor="start" x="81.6069" y="-5355.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="137,-5350 137,-5370 327,-5370 327,-5350 137,-5350"/>
+<text text-anchor="start" x="211" y="-5355.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
+<polygon fill="none" stroke="#000000" points="64,-4964 64,-5348 135,-5348 135,-4964 64,-4964"/>
+<text text-anchor="start" x="71.9067" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">predicate:</text>
+<polygon fill="none" stroke="#000000" points="137,-4964 137,-5348 327,-5348 327,-4964 137,-4964"/>
+<text text-anchor="start" x="139.8721" y="-5333.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;((i_manufact = i_manufact) and</text>
+<text text-anchor="start" x="150.7002" y="-5319.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
+<text text-anchor="start" x="169.7451" y="-5305.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;orchid&#39;) or</text>
+<text text-anchor="start" x="163.5313" y="-5291.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;papaya&#39;)) and</text>
+<text text-anchor="start" x="147.7573" y="-5277.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;pound&#39;) or (i_units</text>
+<text text-anchor="start" x="173.3784" y="-5263.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;lb&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="177.9106" y="-5249.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="150.3105" y="-5235.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))) or ((i_category =</text>
+<text text-anchor="start" x="162.7451" y="-5221.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;women&#39;) and ((i_color =</text>
+<text text-anchor="start" x="159.6279" y="-5207.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;burlywood&#39;) or (i_color =</text>
+<text text-anchor="start" x="168.1831" y="-5193.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;navy&#39;)) and ((i_units =</text>
+<text text-anchor="start" x="149.9209" y="-5179.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;bundle&#39;) or (i_units = &#39;each&#39;))</text>
+<text text-anchor="start" x="150.3105" y="-5165.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
+<text text-anchor="start" x="179.5991" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
+<text text-anchor="start" x="161.5864" y="-5137.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="169.3521" y="-5123.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;bisque&#39;) or</text>
+<text text-anchor="start" x="168.2002" y="-5109.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;azure&#39;)) and</text>
+<text text-anchor="start" x="151.0078" y="-5095.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;n/a&#39;) or (i_units =</text>
+<text text-anchor="start" x="154.583" y="-5081.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;tsp&#39;)) and ((i_size = &#39;small&#39;)</text>
+<text text-anchor="start" x="167.3491" y="-5067.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;large&#39;))) or</text>
+<text text-anchor="start" x="161.5864" y="-5053.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="160.8105" y="-5039.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;chocolate&#39;) or</text>
+<text text-anchor="start" x="153.0278" y="-5025.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;cornflower&#39;)) and</text>
+<text text-anchor="start" x="148.1504" y="-5011.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;bunch&#39;) or (i_units</text>
+<text text-anchor="start" x="164.0439" y="-4997.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;gross&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="177.9106" y="-4983.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="147.7061" y="-4969.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) (type: boolean)&quot;</text>
+<polygon fill="none" stroke="#000000" points="64,-4942 64,-4962 135,-4962 135,-4942 64,-4942"/>
+<text text-anchor="start" x="66.8481" y="-4947.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="137,-4942 137,-4962 327,-4962 327,-4942 137,-4942"/>
+<text text-anchor="start" x="205.2852" y="-4947.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;FIL_50&quot;</text>
+<polygon fill="none" stroke="#000000" points="60.5,-4939 60.5,-5417 329.5,-5417 329.5,-4939 60.5,-4939"/>
 </g>
 <!-- Map_4_0&#45;&gt;Map_4_1 -->
 <g id="edge1" class="edge">
 <title>Map_4_0&#45;&gt;Map_4_1</title>
-<path fill="none" stroke="#000000" d="M267.2353,-5495.8784C262.6043,-5473.9838 258.0285,-5452.35 253.5734,-5431.2871"/>
-<polygon fill="#000000" stroke="#000000" points="256.9598,-5430.3833 251.4661,-5421.324 250.1113,-5431.8319 256.9598,-5430.3833"/>
+<path fill="none" stroke="#000000" d="M261.8098,-5495.8784C257.2081,-5473.9838 252.6612,-5452.35 248.2344,-5431.2871"/>
+<polygon fill="#000000" stroke="#000000" points="251.6224,-5430.3903 246.1404,-5421.324 244.7721,-5431.8301 251.6224,-5430.3903"/>
 </g>
 <!-- Map_4_5 -->
 <g id="Map_4_5" class="node">
 <title>Map_4_5</title>
-<polygon fill="none" stroke="#000000" points="384,-5387 384,-5407 647,-5407 647,-5387 384,-5387"/>
-<text text-anchor="start" x="473.7085" y="-5393.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Filter Operator</text>
-<polygon fill="none" stroke="#000000" points="384,-5365 384,-5385 455,-5385 455,-5365 384,-5365"/>
-<text text-anchor="start" x="405.5034" y="-5370.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="457,-5365 457,-5385 647,-5385 647,-5365 457,-5365"/>
-<text text-anchor="start" x="524" y="-5370.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
-<polygon fill="none" stroke="#000000" points="384,-5343 384,-5363 455,-5363 455,-5343 384,-5343"/>
-<text text-anchor="start" x="401.6069" y="-5348.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="457,-5343 457,-5363 647,-5363 647,-5343 457,-5343"/>
-<text text-anchor="start" x="531" y="-5348.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
-<polygon fill="none" stroke="#000000" points="384,-4971 384,-5341 455,-5341 455,-4971 384,-4971"/>
-<text text-anchor="start" x="391.9067" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">predicate:</text>
-<polygon fill="none" stroke="#000000" points="457,-4971 457,-5341 647,-5341 647,-4971 457,-4971"/>
-<text text-anchor="start" x="459.8721" y="-5326.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;((i_manufact = i_manufact) and</text>
-<text text-anchor="start" x="470.7002" y="-5312.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
-<text text-anchor="start" x="487.4072" y="-5298.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;salmon&#39;) or</text>
-<text text-anchor="start" x="478.0728" y="-5284.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;midnight&#39;)) and</text>
-<text text-anchor="start" x="472.9526" y="-5270.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;oz&#39;) or (i_units =</text>
-<text text-anchor="start" x="471.8691" y="-5256.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;box&#39;)) and ((i_size = &#39;petite&#39;)</text>
-<text text-anchor="start" x="478.2744" y="-5242.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;medium&#39;))) or</text>
-<text text-anchor="start" x="473.0313" y="-5228.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;women&#39;) and</text>
-<text text-anchor="start" x="468.9399" y="-5214.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;snow&#39;) or (i_color</text>
-<text text-anchor="start" x="483.2646" y="-5200.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;steel&#39;)) and ((i_units =</text>
-<text text-anchor="start" x="476.9141" y="-5186.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;carton&#39;) or (i_units = &#39;tbl&#39;))</text>
-<text text-anchor="start" x="470.3105" y="-5172.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
-<text text-anchor="start" x="499.5991" y="-5158.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
-<text text-anchor="start" x="481.5864" y="-5144.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="489.7451" y="-5130.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;purple&#39;) or</text>
-<text text-anchor="start" x="475.7451" y="-5116.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;gainsboro&#39;)) and</text>
-<text text-anchor="start" x="470.8745" y="-5102.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;dram&#39;) or (i_units</text>
-<text text-anchor="start" x="472.7681" y="-5088.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;unknown&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="473.1611" y="-5074.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;small&#39;) or (i_size = &#39;large&#39;)))</text>
-<text text-anchor="start" x="474.0054" y="-5060.8" font-family="Times,serif" font-size="14.00" fill="#000000">or ((i_category = &#39;men&#39;) and</text>
-<text text-anchor="start" x="485.083" y="-5046.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;metallic&#39;) or</text>
-<text text-anchor="start" x="487.4141" y="-5032.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;forest&#39;)) and</text>
-<text text-anchor="start" x="470.8745" y="-5018.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;gram&#39;) or (i_units</text>
-<text text-anchor="start" x="482.1094" y="-5004.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;ounce&#39;)) and ((i_size =</text>
-<text text-anchor="start" x="497.9106" y="-4990.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
-<text text-anchor="start" x="467.7061" y="-4976.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) (type: boolean)&quot;</text>
-<polygon fill="none" stroke="#000000" points="384,-4949 384,-4969 455,-4969 455,-4949 384,-4949"/>
-<text text-anchor="start" x="386.8481" y="-4954.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="457,-4949 457,-4969 647,-4969 647,-4949 457,-4949"/>
-<text text-anchor="start" x="525.2852" y="-4954.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;FIL_54&quot;</text>
-<polygon fill="none" stroke="#000000" points="380.5,-4946 380.5,-5410 649.5,-5410 649.5,-4946 380.5,-4946"/>
+<polygon fill="none" stroke="#000000" points="379,-5387 379,-5407 642,-5407 642,-5387 379,-5387"/>
+<text text-anchor="start" x="468.7085" y="-5393.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Filter Operator</text>
+<polygon fill="none" stroke="#000000" points="379,-5365 379,-5385 450,-5385 450,-5365 379,-5365"/>
+<text text-anchor="start" x="400.5034" y="-5370.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="452,-5365 452,-5385 642,-5385 642,-5365 452,-5365"/>
+<text text-anchor="start" x="519" y="-5370.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
+<polygon fill="none" stroke="#000000" points="379,-5343 379,-5363 450,-5363 450,-5343 379,-5343"/>
+<text text-anchor="start" x="396.6069" y="-5348.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="452,-5343 452,-5363 642,-5363 642,-5343 452,-5343"/>
+<text text-anchor="start" x="526" y="-5348.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
+<polygon fill="none" stroke="#000000" points="379,-4971 379,-5341 450,-5341 450,-4971 379,-4971"/>
+<text text-anchor="start" x="386.9067" y="-5151.8" font-family="Times,serif" font-size="14.00" fill="#000000">predicate:</text>
+<polygon fill="none" stroke="#000000" points="452,-4971 452,-5341 642,-5341 642,-4971 452,-4971"/>
+<text text-anchor="start" x="454.8721" y="-5326.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;((i_manufact = i_manufact) and</text>
+<text text-anchor="start" x="465.7002" y="-5312.8" font-family="Times,serif" font-size="14.00" fill="#000000">(((i_category = &#39;women&#39;) and</text>
+<text text-anchor="start" x="482.4072" y="-5298.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;salmon&#39;) or</text>
+<text text-anchor="start" x="473.0728" y="-5284.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;midnight&#39;)) and</text>
+<text text-anchor="start" x="467.9526" y="-5270.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;oz&#39;) or (i_units =</text>
+<text text-anchor="start" x="466.8691" y="-5256.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;box&#39;)) and ((i_size = &#39;petite&#39;)</text>
+<text text-anchor="start" x="473.2744" y="-5242.8" font-family="Times,serif" font-size="14.00" fill="#000000">or (i_size = &#39;medium&#39;))) or</text>
+<text text-anchor="start" x="468.0313" y="-5228.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;women&#39;) and</text>
+<text text-anchor="start" x="463.9399" y="-5214.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;snow&#39;) or (i_color</text>
+<text text-anchor="start" x="478.2646" y="-5200.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;steel&#39;)) and ((i_units =</text>
+<text text-anchor="start" x="471.9141" y="-5186.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;carton&#39;) or (i_units = &#39;tbl&#39;))</text>
+<text text-anchor="start" x="465.3105" y="-5172.8" font-family="Times,serif" font-size="14.00" fill="#000000">and ((i_size = &#39;n/a&#39;) or (i_size</text>
+<text text-anchor="start" x="494.5991" y="-5158.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;extra large&#39;))) or</text>
+<text text-anchor="start" x="476.5864" y="-5144.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="484.7451" y="-5130.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;purple&#39;) or</text>
+<text text-anchor="start" x="470.7451" y="-5116.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;gainsboro&#39;)) and</text>
+<text text-anchor="start" x="465.8745" y="-5102.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;dram&#39;) or (i_units</text>
+<text text-anchor="start" x="467.7681" y="-5088.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;unknown&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="468.1611" y="-5074.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;small&#39;) or (i_size = &#39;large&#39;)))</text>
+<text text-anchor="start" x="469.0054" y="-5060.8" font-family="Times,serif" font-size="14.00" fill="#000000">or ((i_category = &#39;men&#39;) and</text>
+<text text-anchor="start" x="480.083" y="-5046.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_color = &#39;metallic&#39;) or</text>
+<text text-anchor="start" x="482.4141" y="-5032.8" font-family="Times,serif" font-size="14.00" fill="#000000">(i_color = &#39;forest&#39;)) and</text>
+<text text-anchor="start" x="465.8745" y="-5018.8" font-family="Times,serif" font-size="14.00" fill="#000000">((i_units = &#39;gram&#39;) or (i_units</text>
+<text text-anchor="start" x="477.1094" y="-5004.8" font-family="Times,serif" font-size="14.00" fill="#000000">= &#39;ounce&#39;)) and ((i_size =</text>
+<text text-anchor="start" x="492.9106" y="-4990.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;petite&#39;) or (i_size =</text>
+<text text-anchor="start" x="462.7061" y="-4976.8" font-family="Times,serif" font-size="14.00" fill="#000000">&#39;medium&#39;))))) (type: boolean)&quot;</text>
+<polygon fill="none" stroke="#000000" points="379,-4949 379,-4969 450,-4969 450,-4949 379,-4949"/>
+<text text-anchor="start" x="381.8481" y="-4954.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="452,-4949 452,-4969 642,-4969 642,-4949 452,-4949"/>
+<text text-anchor="start" x="520.2852" y="-4954.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;FIL_54&quot;</text>
+<polygon fill="none" stroke="#000000" points="375.5,-4946 375.5,-5410 644.5,-5410 644.5,-4946 375.5,-4946"/>
 </g>
 <!-- Map_4_0&#45;&gt;Map_4_5 -->
 <g id="edge5" class="edge">
 <title>Map_4_0&#45;&gt;Map_4_5</title>
-<path fill="none" stroke="#000000" d="M448.1902,-5495.8784C453.3028,-5471.5527 458.3478,-5447.549 463.2357,-5424.2926"/>
-<polygon fill="#000000" stroke="#000000" points="466.6889,-5424.8786 465.3206,-5414.3725 459.8386,-5423.4388 466.6889,-5424.8786"/>
+<path fill="none" stroke="#000000" d="M442.7647,-5495.8784C447.9099,-5471.5527 452.987,-5447.549 457.906,-5424.2926"/>
+<polygon fill="#000000" stroke="#000000" points="461.359,-5424.8803 460.0042,-5414.3725 454.5105,-5423.4318 461.359,-5424.8803"/>
 </g>
 <!-- Map_4_2 -->
 <g id="Map_4_2" class="node">
 <title>Map_4_2</title>
-<polygon fill="none" stroke="#000000" points="48,-4833 48,-4853 335,-4853 335,-4833 48,-4833"/>
-<text text-anchor="start" x="147.7705" y="-4839.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Select Operator</text>
-<polygon fill="none" stroke="#000000" points="48,-4811 48,-4831 177,-4831 177,-4811 48,-4811"/>
-<text text-anchor="start" x="98.5034" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="179,-4811 179,-4831 335,-4831 335,-4811 179,-4811"/>
-<text text-anchor="start" x="229" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
-<polygon fill="none" stroke="#000000" points="48,-4789 48,-4809 177,-4809 177,-4789 48,-4789"/>
-<text text-anchor="start" x="94.6069" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="179,-4789 179,-4809 335,-4809 335,-4789 179,-4789"/>
-<text text-anchor="start" x="236" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
-<polygon fill="none" stroke="#000000" points="48,-4767 48,-4787 177,-4787 177,-4767 48,-4767"/>
-<text text-anchor="start" x="79.8481" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="179,-4767 179,-4787 335,-4787 335,-4767 179,-4767"/>
-<text text-anchor="start" x="228.3403" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;SEL_51&quot;</text>
-<polygon fill="none" stroke="#000000" points="48,-4745 48,-4765 177,-4765 177,-4745 48,-4745"/>
-<text text-anchor="start" x="77.8931" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">expressions:</text>
-<polygon fill="none" stroke="#000000" points="179,-4745 179,-4765 335,-4765 335,-4745 179,-4745"/>
-<text text-anchor="start" x="181.6953" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
-<polygon fill="none" stroke="#000000" points="48,-4723 48,-4743 177,-4743 177,-4723 48,-4723"/>
-<text text-anchor="start" x="50.6689" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="179,-4723 179,-4743 335,-4743 335,-4723 179,-4723"/>
-<text text-anchor="start" x="215.1367" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;i_manufact&quot;]</text>
-<polygon fill="none" stroke="#000000" points="44.5,-4720 44.5,-4856 337.5,-4856 337.5,-4720 44.5,-4720"/>
+<polygon fill="none" stroke="#000000" points="41,-4833 41,-4853 328,-4853 328,-4833 41,-4833"/>
+<text text-anchor="start" x="140.7705" y="-4839.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Select Operator</text>
+<polygon fill="none" stroke="#000000" points="41,-4811 41,-4831 170,-4831 170,-4811 41,-4811"/>
+<text text-anchor="start" x="91.5034" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="172,-4811 172,-4831 328,-4831 328,-4811 172,-4811"/>
+<text text-anchor="start" x="222" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
+<polygon fill="none" stroke="#000000" points="41,-4789 41,-4809 170,-4809 170,-4789 41,-4789"/>
+<text text-anchor="start" x="87.6069" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="172,-4789 172,-4809 328,-4809 328,-4789 172,-4789"/>
+<text text-anchor="start" x="229" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
+<polygon fill="none" stroke="#000000" points="41,-4767 41,-4787 170,-4787 170,-4767 41,-4767"/>
+<text text-anchor="start" x="72.8481" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="172,-4767 172,-4787 328,-4787 328,-4767 172,-4767"/>
+<text text-anchor="start" x="221.3403" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;SEL_51&quot;</text>
+<polygon fill="none" stroke="#000000" points="41,-4745 41,-4765 170,-4765 170,-4745 41,-4745"/>
+<text text-anchor="start" x="70.8931" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">expressions:</text>
+<polygon fill="none" stroke="#000000" points="172,-4745 172,-4765 328,-4765 328,-4745 172,-4745"/>
+<text text-anchor="start" x="174.6953" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
+<polygon fill="none" stroke="#000000" points="41,-4723 41,-4743 170,-4743 170,-4723 41,-4723"/>
+<text text-anchor="start" x="43.6689" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="172,-4723 172,-4743 328,-4743 328,-4723 172,-4723"/>
+<text text-anchor="start" x="208.1367" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;i_manufact&quot;]</text>
+<polygon fill="none" stroke="#000000" points="37.5,-4720 37.5,-4856 330.5,-4856 330.5,-4720 37.5,-4720"/>
 </g>
 <!-- Map_4_1&#45;&gt;Map_4_2 -->
 <g id="edge2" class="edge">
 <title>Map_4_1&#45;&gt;Map_4_2</title>
-<path fill="none" stroke="#000000" d="M194.3897,-4934.8865C193.8586,-4911.8716 193.3495,-4889.8105 192.8946,-4870.0976"/>
-<polygon fill="#000000" stroke="#000000" points="196.3917,-4869.9271 192.6618,-4860.0105 189.3935,-4870.0886 196.3917,-4869.9271"/>
+<path fill="none" stroke="#000000" d="M188.143,-4934.8865C187.4938,-4911.8716 186.8716,-4889.8105 186.3156,-4870.0976"/>
+<polygon fill="#000000" stroke="#000000" points="189.8117,-4869.9078 186.0311,-4860.0105 182.8145,-4870.1052 189.8117,-4869.9078"/>
 </g>
 <!-- Map_4_3 -->
 <g id="Map_4_3" class="node">
 <title>Map_4_3</title>
-<polygon fill="none" stroke="#000000" points="44,-4614 44,-4634 331,-4634 331,-4614 44,-4614"/>
-<text text-anchor="start" x="133.0688" y="-4620.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="44,-4592 44,-4612 173,-4612 173,-4592 44,-4592"/>
-<text text-anchor="start" x="94.5034" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="175,-4592 175,-4612 331,-4612 331,-4592 175,-4592"/>
-<text text-anchor="start" x="235.7563" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3811 </text>
-<polygon fill="none" stroke="#000000" points="44,-4570 44,-4590 173,-4590 173,-4570 44,-4570"/>
-<text text-anchor="start" x="90.6069" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="175,-4570 175,-4590 331,-4590 331,-4570 175,-4570"/>
-<text text-anchor="start" x="242.5" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 37 </text>
-<polygon fill="none" stroke="#000000" points="44,-4548 44,-4568 173,-4568 173,-4548 44,-4548"/>
-<text text-anchor="start" x="46.6689" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="175,-4548 175,-4568 331,-4568 331,-4548 175,-4548"/>
-<text text-anchor="start" x="202.3047" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;]</text>
-<polygon fill="none" stroke="#000000" points="44,-4526 44,-4546 173,-4546 173,-4526 44,-4526"/>
-<text text-anchor="start" x="91.0034" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
-<polygon fill="none" stroke="#000000" points="175,-4526 175,-4546 331,-4546 331,-4526 175,-4526"/>
-<text text-anchor="start" x="234.4541" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
-<polygon fill="none" stroke="#000000" points="44,-4504 44,-4524 173,-4524 173,-4504 44,-4504"/>
-<text text-anchor="start" x="70.7896" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
-<polygon fill="none" stroke="#000000" points="175,-4504 175,-4524 331,-4524 331,-4504 175,-4504"/>
-<text text-anchor="start" x="222.4092" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;count()&quot;]</text>
-<polygon fill="none" stroke="#000000" points="44,-4482 44,-4502 173,-4502 173,-4482 44,-4482"/>
-<text text-anchor="start" x="93.7241" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
-<polygon fill="none" stroke="#000000" points="175,-4482 175,-4502 331,-4502 331,-4482 175,-4482"/>
-<text text-anchor="start" x="177.6953" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
-<polygon fill="none" stroke="#000000" points="44,-4460 44,-4480 173,-4480 173,-4460 44,-4460"/>
-<text text-anchor="start" x="75.8481" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="175,-4460 175,-4480 331,-4480 331,-4460 175,-4460"/>
-<text text-anchor="start" x="222.0059" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_52&quot;</text>
-<polygon fill="none" stroke="#000000" points="40.5,-4457 40.5,-4637 333.5,-4637 333.5,-4457 40.5,-4457"/>
+<polygon fill="none" stroke="#000000" points="39,-4614 39,-4634 326,-4634 326,-4614 39,-4614"/>
+<text text-anchor="start" x="128.0688" y="-4620.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="39,-4592 39,-4612 168,-4612 168,-4592 39,-4592"/>
+<text text-anchor="start" x="89.5034" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="170,-4592 170,-4612 326,-4612 326,-4592 170,-4592"/>
+<text text-anchor="start" x="230.7563" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3811 </text>
+<polygon fill="none" stroke="#000000" points="39,-4570 39,-4590 168,-4590 168,-4570 39,-4570"/>
+<text text-anchor="start" x="85.6069" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="170,-4570 170,-4590 326,-4590 326,-4570 170,-4570"/>
+<text text-anchor="start" x="237.5" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 37 </text>
+<polygon fill="none" stroke="#000000" points="39,-4548 39,-4568 168,-4568 168,-4548 39,-4548"/>
+<text text-anchor="start" x="41.6689" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="170,-4548 170,-4568 326,-4568 326,-4548 170,-4548"/>
+<text text-anchor="start" x="197.3047" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;]</text>
+<polygon fill="none" stroke="#000000" points="39,-4526 39,-4546 168,-4546 168,-4526 39,-4526"/>
+<text text-anchor="start" x="86.0034" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
+<polygon fill="none" stroke="#000000" points="170,-4526 170,-4546 326,-4546 326,-4526 170,-4526"/>
+<text text-anchor="start" x="229.4541" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
+<polygon fill="none" stroke="#000000" points="39,-4504 39,-4524 168,-4524 168,-4504 39,-4504"/>
+<text text-anchor="start" x="65.7896" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
+<polygon fill="none" stroke="#000000" points="170,-4504 170,-4524 326,-4524 326,-4504 170,-4504"/>
+<text text-anchor="start" x="217.4092" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;count()&quot;]</text>
+<polygon fill="none" stroke="#000000" points="39,-4482 39,-4502 168,-4502 168,-4482 39,-4482"/>
+<text text-anchor="start" x="88.7241" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
+<polygon fill="none" stroke="#000000" points="170,-4482 170,-4502 326,-4502 326,-4482 170,-4482"/>
+<text text-anchor="start" x="172.6953" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
+<polygon fill="none" stroke="#000000" points="39,-4460 39,-4480 168,-4480 168,-4460 39,-4460"/>
+<text text-anchor="start" x="70.8481" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="170,-4460 170,-4480 326,-4480 326,-4460 170,-4460"/>
+<text text-anchor="start" x="217.0059" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_52&quot;</text>
+<polygon fill="none" stroke="#000000" points="35.5,-4457 35.5,-4637 328.5,-4637 328.5,-4457 35.5,-4457"/>
 </g>
 <!-- Map_4_2&#45;&gt;Map_4_3 -->
 <g id="edge3" class="edge">
 <title>Map_4_2&#45;&gt;Map_4_3</title>
-<path fill="none" stroke="#000000" d="M189.7999,-4715.6921C189.4641,-4695.464 189.0924,-4673.0667 188.7324,-4651.3788"/>
-<polygon fill="#000000" stroke="#000000" points="192.228,-4651.08 188.5625,-4641.1395 185.229,-4651.1962 192.228,-4651.08"/>
+<path fill="none" stroke="#000000" d="M183.3999,-4715.6921C183.2321,-4695.464 183.0462,-4673.0667 182.8662,-4651.3788"/>
+<polygon fill="#000000" stroke="#000000" points="186.3642,-4651.11 182.7812,-4641.1395 179.3644,-4651.1682 186.3642,-4651.11"/>
 </g>
 <!-- Map_4_4 -->
 <g id="Map_4_4" class="node">
@@ -346,82 +346,82 @@
 <!-- Map_4_3&#45;&gt;Map_4_4 -->
 <g id="edge4" class="edge">
 <title>Map_4_3&#45;&gt;Map_4_4</title>
-<path fill="none" stroke="#000000" d="M184.6885,-4452.8905C184.1815,-4432.2449 183.6366,-4410.0616 183.1041,-4388.3824"/>
-<polygon fill="#000000" stroke="#000000" points="186.5969,-4388.0393 182.8523,-4378.1283 179.599,-4388.2113 186.5969,-4388.0393"/>
+<path fill="none" stroke="#000000" d="M181.3396,-4452.8905C181.1947,-4432.2449 181.039,-4410.0616 180.8869,-4388.3824"/>
+<polygon fill="#000000" stroke="#000000" points="184.3851,-4388.1035 180.8149,-4378.1283 177.3853,-4388.1527 184.3851,-4388.1035"/>
 </g>
 <!-- Map_4_6 -->
 <g id="Map_4_6" class="node">
 <title>Map_4_6</title>
-<polygon fill="none" stroke="#000000" points="375,-4833 375,-4853 662,-4853 662,-4833 375,-4833"/>
-<text text-anchor="start" x="474.7705" y="-4839.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Select Operator</text>
-<polygon fill="none" stroke="#000000" points="375,-4811 375,-4831 504,-4831 504,-4811 375,-4811"/>
-<text text-anchor="start" x="425.5034" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="506,-4811 506,-4831 662,-4831 662,-4811 506,-4811"/>
-<text text-anchor="start" x="556" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
-<polygon fill="none" stroke="#000000" points="375,-4789 375,-4809 504,-4809 504,-4789 375,-4789"/>
-<text text-anchor="start" x="421.6069" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="506,-4789 506,-4809 662,-4809 662,-4789 506,-4789"/>
-<text text-anchor="start" x="563" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
-<polygon fill="none" stroke="#000000" points="375,-4767 375,-4787 504,-4787 504,-4767 375,-4767"/>
-<text text-anchor="start" x="406.8481" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="506,-4767 506,-4787 662,-4787 662,-4767 506,-4767"/>
-<text text-anchor="start" x="555.3403" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;SEL_55&quot;</text>
-<polygon fill="none" stroke="#000000" points="375,-4745 375,-4765 504,-4765 504,-4745 375,-4745"/>
-<text text-anchor="start" x="404.8931" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">expressions:</text>
-<polygon fill="none" stroke="#000000" points="506,-4745 506,-4765 662,-4765 662,-4745 506,-4745"/>
-<text text-anchor="start" x="508.6953" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
-<polygon fill="none" stroke="#000000" points="375,-4723 375,-4743 504,-4743 504,-4723 375,-4723"/>
-<text text-anchor="start" x="377.6689" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="506,-4723 506,-4743 662,-4743 662,-4723 506,-4723"/>
-<text text-anchor="start" x="542.1367" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;i_manufact&quot;]</text>
-<polygon fill="none" stroke="#000000" points="371.5,-4720 371.5,-4856 664.5,-4856 664.5,-4720 371.5,-4720"/>
+<polygon fill="none" stroke="#000000" points="373,-4833 373,-4853 660,-4853 660,-4833 373,-4833"/>
+<text text-anchor="start" x="472.7705" y="-4839.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Select Operator</text>
+<polygon fill="none" stroke="#000000" points="373,-4811 373,-4831 502,-4831 502,-4811 373,-4811"/>
+<text text-anchor="start" x="423.5034" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="504,-4811 504,-4831 660,-4831 660,-4811 504,-4811"/>
+<text text-anchor="start" x="554" y="-4816.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 6455250 </text>
+<polygon fill="none" stroke="#000000" points="373,-4789 373,-4809 502,-4809 502,-4789 373,-4789"/>
+<text text-anchor="start" x="419.6069" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="504,-4789 504,-4809 660,-4809 660,-4789 504,-4789"/>
+<text text-anchor="start" x="561" y="-4794.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 14345 </text>
+<polygon fill="none" stroke="#000000" points="373,-4767 373,-4787 502,-4787 502,-4767 373,-4767"/>
+<text text-anchor="start" x="404.8481" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="504,-4767 504,-4787 660,-4787 660,-4767 504,-4767"/>
+<text text-anchor="start" x="553.3403" y="-4772.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;SEL_55&quot;</text>
+<polygon fill="none" stroke="#000000" points="373,-4745 373,-4765 502,-4765 502,-4745 373,-4745"/>
+<text text-anchor="start" x="402.8931" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">expressions:</text>
+<polygon fill="none" stroke="#000000" points="504,-4745 504,-4765 660,-4765 660,-4745 504,-4745"/>
+<text text-anchor="start" x="506.6953" y="-4750.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
+<polygon fill="none" stroke="#000000" points="373,-4723 373,-4743 502,-4743 502,-4723 373,-4723"/>
+<text text-anchor="start" x="375.6689" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="504,-4723 504,-4743 660,-4743 660,-4723 504,-4723"/>
+<text text-anchor="start" x="540.1367" y="-4728.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;i_manufact&quot;]</text>
+<polygon fill="none" stroke="#000000" points="369.5,-4720 369.5,-4856 662.5,-4856 662.5,-4720 369.5,-4720"/>
 </g>
 <!-- Map_4_5&#45;&gt;Map_4_6 -->
 <g id="edge6" class="edge">
 <title>Map_4_5&#45;&gt;Map_4_6</title>
-<path fill="none" stroke="#000000" d="M516.8165,-4941.8584C517.0122,-4916.4137 517.2004,-4891.9481 517.3669,-4870.3033"/>
-<polygon fill="#000000" stroke="#000000" points="520.8672,-4870.2657 517.4443,-4860.239 513.8674,-4870.2118 520.8672,-4870.2657"/>
+<path fill="none" stroke="#000000" d="M513.6329,-4941.8584C514.0244,-4916.4137 514.4008,-4891.9481 514.7338,-4870.3033"/>
+<polygon fill="#000000" stroke="#000000" points="518.2343,-4870.2917 514.8886,-4860.239 511.2351,-4870.184 518.2343,-4870.2917"/>
 </g>
 <!-- Map_4_7 -->
 <g id="Map_4_7" class="node">
 <title>Map_4_7</title>
-<polygon fill="none" stroke="#000000" points="380,-4614 380,-4634 667,-4634 667,-4614 380,-4614"/>
-<text text-anchor="start" x="469.0688" y="-4620.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
-<polygon fill="none" stroke="#000000" points="380,-4592 380,-4612 509,-4612 509,-4592 380,-4592"/>
-<text text-anchor="start" x="430.5034" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
-<polygon fill="none" stroke="#000000" points="511,-4592 511,-4612 667,-4612 667,-4592 511,-4592"/>
-<text text-anchor="start" x="571.7563" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3811 </text>
-<polygon fill="none" stroke="#000000" points="380,-4570 380,-4590 509,-4590 509,-4570 380,-4570"/>
-<text text-anchor="start" x="426.6069" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
-<polygon fill="none" stroke="#000000" points="511,-4570 511,-4590 667,-4590 667,-4570 511,-4570"/>
-<text text-anchor="start" x="578.5" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 37 </text>
-<polygon fill="none" stroke="#000000" points="380,-4548 380,-4568 509,-4568 509,-4548 380,-4548"/>
-<text text-anchor="start" x="382.6689" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
-<polygon fill="none" stroke="#000000" points="511,-4548 511,-4568 667,-4568 667,-4548 511,-4548"/>
-<text text-anchor="start" x="538.3047" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;]</text>
-<polygon fill="none" stroke="#000000" points="380,-4526 380,-4546 509,-4546 509,-4526 380,-4526"/>
-<text text-anchor="start" x="427.0034" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
-<polygon fill="none" stroke="#000000" points="511,-4526 511,-4546 667,-4546 667,-4526 511,-4526"/>
-<text text-anchor="start" x="570.4541" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
-<polygon fill="none" stroke="#000000" points="380,-4504 380,-4524 509,-4524 509,-4504 380,-4504"/>
-<text text-anchor="start" x="406.7896" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
-<polygon fill="none" stroke="#000000" points="511,-4504 511,-4524 667,-4524 667,-4504 511,-4504"/>
-<text text-anchor="start" x="558.4092" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;count()&quot;]</text>
-<polygon fill="none" stroke="#000000" points="380,-4482 380,-4502 509,-4502 509,-4482 380,-4482"/>
-<text text-anchor="start" x="429.7241" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
-<polygon fill="none" stroke="#000000" points="511,-4482 511,-4502 667,-4502 667,-4482 511,-4482"/>
-<text text-anchor="start" x="513.6953" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
-<polygon fill="none" stroke="#000000" points="380,-4460 380,-4480 509,-4480 509,-4460 380,-4460"/>
-<text text-anchor="start" x="411.8481" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
-<polygon fill="none" stroke="#000000" points="511,-4460 511,-4480 667,-4480 667,-4460 511,-4460"/>
-<text text-anchor="start" x="558.0059" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_56&quot;</text>
-<polygon fill="none" stroke="#000000" points="376.5,-4457 376.5,-4637 669.5,-4637 669.5,-4457 376.5,-4457"/>
+<polygon fill="none" stroke="#000000" points="382,-4614 382,-4634 669,-4634 669,-4614 382,-4614"/>
+<text text-anchor="start" x="471.0688" y="-4620.8" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">Group By Operator</text>
+<polygon fill="none" stroke="#000000" points="382,-4592 382,-4612 511,-4612 511,-4592 382,-4592"/>
+<text text-anchor="start" x="432.5034" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size:</text>
+<polygon fill="none" stroke="#000000" points="513,-4592 513,-4612 669,-4612 669,-4592 513,-4592"/>
+<text text-anchor="start" x="573.7563" y="-4597.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 3811 </text>
+<polygon fill="none" stroke="#000000" points="382,-4570 382,-4590 511,-4590 511,-4570 382,-4570"/>
+<text text-anchor="start" x="428.6069" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rows:</text>
+<polygon fill="none" stroke="#000000" points="513,-4570 513,-4590 669,-4590 669,-4570 513,-4570"/>
+<text text-anchor="start" x="580.5" y="-4575.8" font-family="Times,serif" font-size="14.00" fill="#000000"> 37 </text>
+<polygon fill="none" stroke="#000000" points="382,-4548 382,-4568 511,-4568 511,-4548 382,-4548"/>
+<text text-anchor="start" x="384.6689" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">outputColumnNames:</text>
+<polygon fill="none" stroke="#000000" points="513,-4548 513,-4568 669,-4568 669,-4548 513,-4548"/>
+<text text-anchor="start" x="540.3047" y="-4553.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;_col0&quot;, &quot;_col1&quot;]</text>
+<polygon fill="none" stroke="#000000" points="382,-4526 382,-4546 511,-4546 511,-4526 382,-4526"/>
+<text text-anchor="start" x="429.0034" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">mode:</text>
+<polygon fill="none" stroke="#000000" points="513,-4526 513,-4546 669,-4546 669,-4526 513,-4526"/>
+<text text-anchor="start" x="572.4541" y="-4531.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;hash&quot;</text>
+<polygon fill="none" stroke="#000000" points="382,-4504 382,-4524 511,-4524 511,-4504 382,-4504"/>
+<text text-anchor="start" x="408.7896" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">aggregations:</text>
+<polygon fill="none" stroke="#000000" points="513,-4504 513,-4524 669,-4524 669,-4504 513,-4504"/>
+<text text-anchor="start" x="560.4092" y="-4509.8" font-family="Times,serif" font-size="14.00" fill="#000000">[&quot;count()&quot;]</text>
+<polygon fill="none" stroke="#000000" points="382,-4482 382,-4502 511,-4502 511,-4482 382,-4482"/>
+<text text-anchor="start" x="431.7241" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">keys:</text>
+<polygon fill="none" stroke="#000000" points="513,-4482 513,-4502 669,-4502 669,-4482 513,-4482"/>
+<text text-anchor="start" x="515.6953" y="-4487.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;i_manufact (type: string)&quot;</text>
+<polygon fill="none" stroke="#000000" points="382,-4460 382,-4480 511,-4480 511,-4460 382,-4460"/>
+<text text-anchor="start" x="413.8481" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">OperatorId:</text>
+<polygon fill="none" stroke="#000000" points="513,-4460 513,-4480 669,-4480 669,-4460 513,-4460"/>
+<text text-anchor="start" x="560.0059" y="-4465.8" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;GBY_56&quot;</text>
+<polygon fill="none" stroke="#000000" points="378.5,-4457 378.5,-4637 671.5,-4637 671.5,-4457 378.5,-4457"/>
 </g>
 <!-- Map_4_6&#45;&gt;Map_4_7 -->
 <g id="edge7" class="edge">
 <title>Map_4_6&#45;&gt;Map_4_7</title>
-<path fill="none" stroke="#000000" d="M519.5002,-4715.6921C519.9198,-4695.464 520.3845,-4673.0667 520.8345,-4651.3788"/>
-<polygon fill="#000000" stroke="#000000" points="524.3386,-4651.2099 521.0469,-4641.1395 517.3401,-4651.0647 524.3386,-4651.2099"/>
+<path fill="none" stroke="#000000" d="M518.7003,-4715.6921C519.4557,-4695.464 520.2921,-4673.0667 521.102,-4651.3788"/>
+<polygon fill="#000000" stroke="#000000" points="524.6087,-4651.2631 521.4844,-4641.1395 517.6136,-4651.0019 524.6087,-4651.2631"/>
 </g>
 <!-- Map_4_8 -->
 <g id="Map_4_8" class="node">
@@ -469,8 +469,8 @@
 <!-- Map_4_7&#45;&gt;Map_4_8 -->
 <g id="edge8" class="edge">
 <title>Map_4_7&#45;&gt;Map_4_8</title>
-<path fill="none" stroke="#000000" d="M523.9906,-4452.8905C524.2079,-4432.2449 524.4415,-4410.0616 524.6697,-4388.3824"/>
-<polygon fill="#000000" stroke="#000000" points="528.172,-4388.1646 524.7776,-4378.1283 521.1724,-4388.0909 528.172,-4388.1646"/>
+<path fill="none" stroke="#000000" d="M525.3302,-4452.8905C525.4026,-4432.2449 525.4805,-4410.0616 525.5566,-4388.3824"/>
+<polygon fill="#000000" stroke="#000000" points="529.0573,-4388.1406 525.5925,-4378.1283 522.0574,-4388.1159 529.0573,-4388.1406"/>
 </g>
 <!-- Reducer_5_0 -->
 <g id="Reducer_5_0" class="node">
