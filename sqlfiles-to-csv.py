@@ -9,7 +9,7 @@ for filename in os.listdir(directory):
 			# remove comments from lines, use, set commands
 			nocomments = filter(lambda v: not (v.strip().startswith("--") or v.strip().lower().startswith("use") or v.strip().lower().startswith("set")), lines)
 			# remove line endings
-			nolinebreaks = map(lambda v: v.strip().lower(), nocomments)
+			nolinebreaks = map(lambda v: v.strip(), nocomments)
 			joinedquery = " ".join(nolinebreaks).strip()
 			query = joinedquery.rstrip(';')
 		print queryname.strip() + "^" + query
