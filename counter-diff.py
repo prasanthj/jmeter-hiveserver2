@@ -49,7 +49,6 @@ def diff(file1, file2):
 				counterName = counter['counterName']
 				# if counter does not exist in file1, add it with 0 value
 				if counterName not in countertable:
-					print "000000"
 					countertable[counterName] = [0]
 				countertable[counterName].append(counter['counterValue'])
 
