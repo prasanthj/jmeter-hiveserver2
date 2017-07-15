@@ -1,37 +1,46 @@
-import os, sys, zipfile, json
-from texttable import Texttable
+import imp, json, os, shutil, sys, tempfile, zipfile
+import imp
+try:
+    imp.find_module('texttable')
+    from texttable import Texttable
+except ImportError:
+	sys.stderr.write("Could not import Texttable\nRetry after 'pip install texttable'\n")
+	exit()
+
+tmpdir = tempfile.mkdtemp()
 
 def extract_zip(filename):
-	file_dir = os.path.splitext(filename)[0]
+	file_dir = os.path.join(tmpdir, os.path.splitext(filename)[0])
 	if not os.path.exists(file_dir):
 		os.makedirs(file_dir)
 
 	zip_ref = zipfile.ZipFile(os.path.abspath(filename), 'r')
 	zip_ref.extractall(os.path.abspath(file_dir))
 	zip_ref.close()
+	return file_dir
 
 
 def diff(file1, file2):
 	# extract ZIP files
-	extract_zip(file1)
-	extract_zip(file2)
+	file1_dir = extract_zip(file1)
+	file2_dir = extract_zip(file2)
 
 	# tez debugtool writes json data to TEZ_DAG file whereas tez UI writes to dag.json
 	# also in dag.json data is inside "dag" root node
 	file1_using_dag_json = True
-	dag_json_file1 = os.path.join(os.path.abspath(os.path.splitext(file1)[0]), "dag.json")
+	dag_json_file1 = os.path.join(file1_dir, "dag.json")
 	if os.path.isfile(dag_json_file1) == False:
 		file1_using_dag_json = False
-		dag_json_file1 = os.path.join(os.path.abspath(os.path.splitext(file1)[0]), "TEZ_DAG")
+		dag_json_file1 = os.path.join(file1_dir, "TEZ_DAG")
 		if os.path.isfile(dag_json_file1) == False:
 			print "Unable to find dag.json/TEZ_DAG file inside the archive " + file1
 			exit()
 
 	file2_using_dag_json = True
-	dag_json_file2 = os.path.join(os.path.abspath(os.path.splitext(file2)[0]), "dag.json")
+	dag_json_file2 = os.path.join(file2_dir, "dag.json")
 	if os.path.isfile(dag_json_file2) == False:
 		file2_using_dag_json = False
-		dag_json_file2 = os.path.join(os.path.abspath(os.path.splitext(file2)[0]), "TEZ_DAG")
+		dag_json_file2 = os.path.join(file2_dir, "TEZ_DAG")
 		if os.path.isfile(dag_json_file2) == False:
 			print "Unable to find dag.json/TEZ_DAG file inside the archive " + file1
 			exit()
@@ -152,6 +161,7 @@ def print_table(difftable, name1, name2, detailed=False):
 
 	print table.draw() + "\n"
 
+
 def main(argv):
 	sysargs = len(argv)
 	if sysargs < 2:
@@ -169,4 +179,7 @@ def main(argv):
 	print_table(difftable, os.path.splitext(file1)[0], os.path.splitext(file2)[0], detailed)
 
 if __name__ == "__main__":
-	sys.exit(main(sys.argv[1:]))
+	try:
+		sys.exit(main(sys.argv[1:]))
+	finally:
+		shutil.rmtree(tmpdir)
