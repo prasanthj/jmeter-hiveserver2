@@ -12,7 +12,7 @@
     </TestPlan>
     <hashTree>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-        <stringProp name="filename">./query-streams/queries_${__threadNum}.csv</stringProp>
+        <stringProp name="filename">./query-streams/query_${__threadNum}.csv</stringProp>
         <stringProp name="fileEncoding"></stringProp>
         <stringProp name="variableNames">queryId,query</stringProp>
         <stringProp name="delimiter">^</stringProp>
