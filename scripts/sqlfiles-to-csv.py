@@ -12,7 +12,7 @@ if not os.path.exists(outputDir):
 for filename in os.listdir(inputDir):
 	if filename.endswith(".sql"):
 		queryname = os.path.basename(filename)
-		outFile = os.path.abspath(os.path.join(os.path.abspath(outputDir), filename))
+		outFile = os.path.abspath(os.path.join(os.path.abspath(outputDir), os.path.splitext(filename)[0] + ".csv"))
 		with open(os.path.join(inputDir,filename)) as f:
 			lines = f.readlines()
 			# remove comments from lines, use, set commands
